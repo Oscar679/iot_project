@@ -1,0 +1,58 @@
+nohup: ignoring input
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.46.158:5000
+Press CTRL+C to quit
+127.0.0.1 - - [15/Jun/2025 17:23:56] "GET / HTTP/1.1" 200 -
+31.208.213.32 - - [15/Jun/2025 17:24:41] "GET / HTTP/1.1" 200 -
+31.208.213.32 - - [15/Jun/2025 17:24:42] "GET /favicon.ico HTTP/1.1" 404 -
+31.208.213.32 - - [15/Jun/2025 17:24:49] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07O\x01\x00\x07K\x03\x0328G:]V_sê´')
+31.208.213.32 - - [15/Jun/2025 17:24:49] "\x16\x03\x01\x07O\x01\x00\x07K\x03\x0328G:]V_sê´\x1eL" HTTPStatus.BAD_REQUEST -
+31.208.213.32 - - [15/Jun/2025 17:24:49] code 400, message Bad request version ('Ç£an\x82£\x06#C2àÏ\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+31.208.213.32 - - [15/Jun/2025 17:24:49] "\x16\x03\x01\x07O\x01\x00\x07K\x03\x03ªw/|çÌæÅTi\x0b8\x8cH\x81Õ &\x07¥'Ü¾\x0d\x14!c\x1d ï®ï \x04{ª&\x0dÙ¿\x84ØAL\x84\x10XÙ®Îôû Ç£an\x82£\x06#C2àÏ\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À" HTTPStatus.BAD_REQUEST -
+31.208.213.32 - - [15/Jun/2025 17:24:49] code 400, message Bad request version ('È\x165ëÀÁ¢\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+31.208.213.32 - - [15/Jun/2025 17:24:49] "\x16\x03\x01\x02~\x01\x00\x02z\x03\x03Ï_%ï©ü8iD\x19éÖY\x8ep\x7f\x9b\x18¯'+\x07Á*¤ªN\x1f¶Õ\x01á )\x88­\x9cEAyâ&?(þWåUÔo\x876]\x88\x8fPz\x1eÈ\x165ëÀÁ¢\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À" HTTPStatus.BAD_REQUEST -
+31.208.213.32 - - [15/Jun/2025 17:24:55] code 400, message Bad request version ('²ÞTø\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+31.208.213.32 - - [15/Jun/2025 17:24:55] code 400, message Bad request version ('Aiý-Ò\x03"ã\x0fâ¿\x90ôSEq\x03{\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+31.208.213.32 - - [15/Jun/2025 17:24:55] "\x16\x03\x01\x07O\x01\x00\x07K\x03\x03\x0cþwì\x08¦\x02±q1í\x87-Q§\x0f²c\x06#ÁMnéÃË¿½\x93,v¤ fdÛÇÏuw(\x99Ê·>k¼cr$\x87\x8d°q¾,\x15Ø£b\x1f²ÞTø\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À" HTTPStatus.BAD_REQUEST -
+31.208.213.32 - - [15/Jun/2025 17:24:55] "\x16\x03\x01\x07O\x01\x00\x07K\x03\x03Í¢\x98\x01\x10\x9e%\x12ÞÙÇ\x83\x17¬6(\x940¥1\x1fÁ,ÓÝÑd_ò,\x92x 'Éabr\x105G%þÅH_\x0bAiý-Ò\x03"ã\x0fâ¿\x90ôSEq\x03{\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À" HTTPStatus.BAD_REQUEST -
+31.208.213.32 - - [15/Jun/2025 17:24:55] code 400, message Bad request version ('`õ;í')
+31.208.213.32 - - [15/Jun/2025 17:24:55] "\x16\x03\x01\x02~\x01\x00\x02z\x03\x03\x06\x95F²\x1d®·\x09&\x7f\x94]\x98\x03Ãj*Ñïw\x95"½ì\x8b\x86y½q\x0dßê `õ;í" HTTPStatus.BAD_REQUEST -
+31.208.213.32 - - [15/Jun/2025 17:25:02] "GET / HTTP/1.1" 200 -
+31.208.213.32 - - [15/Jun/2025 17:25:03] "GET / HTTP/1.1" 200 -
+31.208.213.32 - - [15/Jun/2025 17:25:04] code 400, message Bad request version ('ó\x80]\x90')
+31.208.213.32 - - [15/Jun/2025 17:25:04] "\x16\x03\x01\x07O\x01\x00\x07K\x03\x03èY4Ä\x1b\x11Ø\x9aÎºkôú\x1fø\x1a ¹×\x8dÝ3z½rtmð³«ÐE B\x9bÏ\x93®¿\x971ÿ¹$\x18\x121)Cc\x1có\x80]\x90" HTTPStatus.BAD_REQUEST -
+31.208.213.32 - - [15/Jun/2025 17:25:04] code 400, message Bad request version ('8\x94J\'\x84tdùW~\x8b5ØtH\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+31.208.213.32 - - [15/Jun/2025 17:25:04] "\x16\x03\x01\x02~\x01\x00\x02z\x03\x03hëb\x9a¥¬Û\x80w1`©gß\x9f\x9f\x92\x1c\\¶Ý]ðð\x95^'\x0dª£\x9cÔ Â­\x0f©NúÕUÌý]\x06mLë\x8a\x1c8\x94J'\x84tdùW~\x8b5ØtH\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À" HTTPStatus.BAD_REQUEST -
+31.208.213.32 - - [15/Jun/2025 17:25:04] code 400, message Bad request version ('\x97r\x13\x97\x14#1-\x93²@[K@\x12\x8f^Rô\x82\x94°\x7fµ\x14AEÜ\xadÊ)\x87\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+31.208.213.32 - - [15/Jun/2025 17:25:04] "\x16\x03\x01\x07O\x01\x00\x07K\x03\x03=Û¡\x84}\x0f\x0eüf\x1f\x8e\x1bðõÒ}Ïô¢\x8e\x12\x1cÏ6_-\x04\x97Ñ\x1d_^ \x97r\x13\x97\x14#1-\x93²@[K@\x12\x8f^Rô\x82\x94°\x7fµ\x14AEÜ­Ê)\x87\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À" HTTPStatus.BAD_REQUEST -
+31.208.213.32 - - [15/Jun/2025 17:25:04] code 400, message Bad request version ('w~ãØ\x06C\x9f\x994ì¤õ\\®\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+31.208.213.32 - - [15/Jun/2025 17:25:04] "\x16\x03\x01\x02~\x01\x00\x02z\x03\x03\x1b\x9d\x03\x9ae\x98®\x10\x00çÕ+/¶!\x9eß±ò\x07eõ.=\\ú\x9b¸¸QgR u\x12\x15¯\x14¬ZjjQ&Q\x806WõÔ\x85w~ãØ\x06C\x9f\x994ì¤õ\\®\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À" HTTPStatus.BAD_REQUEST -
+31.208.213.32 - - [15/Jun/2025 17:25:04] code 400, message Bad request syntax ('\x16\x03\x01\x07O\x01\x00\x07K\x03\x03©1øù©>Êû')
+31.208.213.32 - - [15/Jun/2025 17:25:04] "\x16\x03\x01\x07O\x01\x00\x07K\x03\x03©1øù©>Êû" HTTPStatus.BAD_REQUEST -
+31.208.213.32 - - [15/Jun/2025 17:25:04] code 400, message Bad request version ('8\x11GeëÐÎfÁ¥ÛòÍc\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+31.208.213.32 - - [15/Jun/2025 17:25:04] "\x16\x03\x01\x02~\x01\x00\x02z\x03\x03Nr&Ú\x06£°\x8an°¥\x8dêÃuË\x97Ï\x98Ù6\x1e\x86åþ\x98[ä6\x17Û\x96 ¨\x1a@\x1a Ãsýk\x1bÀM7úo:Ñ 8\x11GeëÐÎfÁ¥ÛòÍc\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À" HTTPStatus.BAD_REQUEST -
+31.208.213.32 - - [15/Jun/2025 17:25:10] "GET / HTTP/1.1" 200 -
+31.208.213.32 - - [15/Jun/2025 17:25:11] "GET /favicon.ico HTTP/1.1" 404 -
+31.208.213.32 - - [15/Jun/2025 17:26:07] "GET / HTTP/1.1" 200 -
+31.208.213.32 - - [15/Jun/2025 17:26:07] "GET /favicon.ico HTTP/1.1" 404 -
+31.208.213.32 - - [15/Jun/2025 17:26:08] "GET / HTTP/1.1" 200 -
+31.208.213.32 - - [15/Jun/2025 17:26:08] "GET /favicon.ico HTTP/1.1" 404 -
+31.208.213.32 - - [15/Jun/2025 17:26:08] "GET / HTTP/1.1" 200 -
+31.208.213.32 - - [15/Jun/2025 17:26:08] "GET /favicon.ico HTTP/1.1" 404 -
+31.208.213.32 - - [15/Jun/2025 17:26:08] "GET / HTTP/1.1" 200 -
+31.208.213.32 - - [15/Jun/2025 17:26:08] "GET /favicon.ico HTTP/1.1" 404 -
+31.208.213.32 - - [15/Jun/2025 17:26:09] "GET / HTTP/1.1" 200 -
+31.208.213.32 - - [15/Jun/2025 17:26:10] "GET / HTTP/1.1" 200 -
+31.208.213.32 - - [15/Jun/2025 17:26:10] "GET / HTTP/1.1" 200 -
+31.208.213.32 - - [15/Jun/2025 17:26:10] "GET / HTTP/1.1" 200 -
+31.208.213.32 - - [15/Jun/2025 17:26:10] "GET / HTTP/1.1" 200 -
+31.208.213.32 - - [15/Jun/2025 17:26:13] "GET / HTTP/1.1" 200 -
+31.208.213.32 - - [15/Jun/2025 17:26:13] "GET / HTTP/1.1" 200 -
+31.208.213.32 - - [15/Jun/2025 17:26:13] "GET / HTTP/1.1" 200 -
+31.208.213.32 - - [15/Jun/2025 17:26:13] "GET / HTTP/1.1" 200 -
+31.208.213.32 - - [15/Jun/2025 17:26:20] "GET / HTTP/1.1" 200 -
+31.208.213.32 - - [15/Jun/2025 17:26:21] "GET / HTTP/1.1" 200 -
