@@ -1,18 +1,10 @@
 :root {
-    --bs-body-bg: #0b1d3a;
-    /* Very dark navy */
-    --bs-body-color: #e2e8f0;
-    /* Light blue-gray */
-    --bs-primary: #22d3ee;
-    /* Cyan */
-    --bs-secondary: #64748b;
-    /* Slate gray */
-    --bs-info: #38bdf8;
-    /* Sky blue */
-
-    /* Optional extras */
-    --bs-link-color: #22d3ee;
-    --bs-link-hover-color: #38bdf8;
+    --bs-body-bg: #f8f9fa;
+    --bs-body-color: #212529;
+    --bs-primary: #17a2b8;
+    --bs-warning: #fd7e14;
+    --bs-danger: #dc3545;
+    --bs-secondary: #6c757d;
 }
 
 html {
