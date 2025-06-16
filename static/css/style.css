@@ -1,14 +1,14 @@
 :root {
-    --bs-primary: #6d597a;
-    /* Dusty Purple */
-    --bs-secondary: #b56576;
-    /* Rosewood */
-    --bs-body-bg: #f2e9e4;
-    /* Warm sand */
-    --bs-body-color: #22223b;
-    /* Midnight Blue */
-    --bs-info: #ffca3a;
-    /* Golden Yellow */
+    --bs-primary: #ff6b6b;
+    /* Coral Red */
+    --bs-secondary: #ffe66d;
+    /* Soft Yellow */
+    --bs-body-bg: #fffaf0;
+    /* Ivory */
+    --bs-body-color: #333333;
+    /* Dark charcoal */
+    --bs-info: #4ecdc4;
+    /* Aqua Teal */
 }
 
 html {
