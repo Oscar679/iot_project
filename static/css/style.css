@@ -1,14 +1,21 @@
 :root {
-    --bs-primary: #b33f62;
-    /* Mars Red */
-    --bs-secondary: #e07a5f;
-    /* Rust Orange */
-    --bs-body-bg: #2a1e5c;
-    /* Deep Violet */
-    --bs-body-color: #fdfcdc;
-    /* Pale Cream */
-    --bs-info: #f2cc8f;
-    /* Soft Apricot */
+    /* Dark mode base colors */
+    --bs-body-bg: #121212;
+    /* Almost-black background */
+    --bs-body-color: #E0E0E0;
+    /* Light gray text */
+
+    /* Accent colors */
+    --bs-primary: #BB86FC;
+    /* Lavender */
+    --bs-secondary: #03DAC6;
+    /* Teal */
+    --bs-info: #CF6679;
+    /* Soft red/pink */
+
+    /* (Optional) other Bootstrap variables */
+    --bs-link-color: #BB86FC;
+    --bs-link-hover-color: #E0E0E0;
 }
 
 html {
