@@ -1,17 +1,17 @@
 :root {
-    --bs-body-bg: #ffffff;
-    /* Pure white */
-    --bs-body-color: #444444;
-    /* Medium-dark gray text */
-    --bs-primary: #4a6fa5;
-    /* Steel-blue accent */
-    --bs-secondary: #e9ecef;
-    /* Soft gray background for cards */
+    --bs-body-bg: #2f3e46;
+    /* Slate gray */
+    --bs-body-color: #cad2c5;
+    /* Ivory-white text */
+    --bs-primary: #f7fff7;
+    /* Ivory accent */
+    --bs-secondary: #354f52;
+    /* Slightly lighter slate for borders */
 }
 
 html {
     color: var(--bs-body-color) !important;
-    height: 100dvh;
+    height: 100dvh; 
 }
 
 body {
