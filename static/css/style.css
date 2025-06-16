@@ -2,9 +2,7 @@ html {
     height: 100dvh;
 }
 
-body {
-    margin: 30px;
-}
+body {}
 
 .row div {
     border: 3px solid black;
@@ -16,5 +14,5 @@ body {
 }
 
 .sticky-top {
-    background-color: dimgray;
+    background-color: pink;
 }
