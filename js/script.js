@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 throw new Error('Response status: ' + response.status);
             }
 
-            const json = await response.json();
-            console.log(json);
-            container.innerHTML = json[0];
+            const data = await response.json();
+            console.log(data);
+            container.innerHTML = data.temperature;
         } catch (error) {
             console.error(error.message);
         }
@@ -21,4 +21,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     fetchData();
+    setInterval(fetchData, 10_000);
 });
