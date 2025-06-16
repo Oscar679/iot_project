@@ -13,3 +13,7 @@ body {
 .nav nav-pills mb-3 {
     position: sticky;
 }
+
+#pills-tab {
+    position: sticky;
+}
