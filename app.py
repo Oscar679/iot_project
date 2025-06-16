@@ -16,10 +16,18 @@ DB_NAME = os.getenv("DB_NAME")
 # Flask app setup
 app = Flask(__name__)
 
-# Route to check if the server is running
+# Defining routes for html files (different pages on website)
 @app.route("/")
 def home_page():
     return render_template("index.html")
+
+@app.route("/aboutMe")
+def about_page():
+    return render_template("aboutMe.html")
+
+@app.route("/contact")
+def contact_page():
+    return render_template("contact.html")
 
 # Endpoint to insert sensor data
 @app.route("/api/data", methods=["POST"])
@@ -67,20 +75,6 @@ def get_current_data():
             return jsonify({"error": "No data found"}), 404
     except mysql.connector.Error as err:
         return jsonify({"error": str(err)}), 500
-    
-
-# Defining routes for html files (different pages on website)
-@app.route("/")
-def home_page():
-    return render_template("index.html")
-
-@app.route("/aboutMe")
-def about_page():
-    return render_template("aboutMe.html")
-
-@app.route("/contact")
-def contact_page():
-    return render_template("contact.html")
 
     # Start server
 if __name__ == "__main__":
