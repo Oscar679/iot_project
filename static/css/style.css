@@ -1,17 +1,17 @@
 :root {
-    --bs-body-bg: #1e1e1e;
-    /* Dark gray */
-    --bs-body-color: #cbd5e1;
-    /* Soft pale gray */
-    --bs-primary: #4b5563;
-    /* Medium gray */
-    --bs-secondary: #6b7280;
-    /* Light gray */
-    --bs-info: #9ca3af;
-    /* Even lighter gray */
+    --bs-body-bg: #0a0a0a;
+    /* Pure black */
+    --bs-body-color: #f5f5f5;
+    /* Near white */
+    --bs-primary: #ff0774;
+    /* Neon pink */
+    --bs-secondary: #00f5d4;
+    /* Neon aqua */
+    --bs-info: #ffe600;
+    /* Neon yellow */
 
-    --bs-link-color: #4b5563;
-    --bs-link-hover-color: #cbd5e1;
+    --bs-link-color: #ff0774;
+    --bs-link-hover-color: #00f5d4;
 }
 
 html {
