@@ -9,3 +9,7 @@ body {
 .row div {
     border: 3px solid black;
 }
+
+#pills-tab {
+    padding: 10px;
+}
