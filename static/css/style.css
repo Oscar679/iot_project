@@ -1,14 +1,14 @@
 :root {
-    --bs-body-bg: #0d1b2a;
-    /* Midnight navy */
-    --bs-body-color: #e0e1dd;
-    /* Soft off-white */
-    --bs-primary: #22d3ee;
-    /* Cyan (humidity) */
-    --bs-warning: #fd7e14;
-    /* Sunset orange (temperature) */
-    --bs-secondary: #415a77;
-    /* Steely blue for borders/text */
+    --bs-body-bg: #1c1c1e;
+    /* Charcoal black */
+    --bs-body-color: #f2f2f7;
+    /* Pale gray */
+    --bs-primary: #33d6f7;
+    /* Electric blue (humidity) */
+    --bs-warning: #ff5d94;
+    /* Neon pink (temperature) */
+    --bs-secondary: #3a3a3c;
+    /* Dark gray for UI accents */
 }
 
 html {
@@ -39,15 +39,11 @@ body {
 
 .nav-pills .nav-link.active {
     background-color: var(--bs-primary) !important;
-    color: #0d1b2a !important;
+    color: var(--bs-body-bg) !important;
 }
 
 .nav-pills .nav-link:hover,
 .nav-pills .nav-link:focus {
     background-color: var(--bs-warning) !important;
-    color: #0d1b2a !important;
-}
-
-.btn-primary:hover {
-    background-color: var(--bs-primary);
+    color: var(--bs-body-bg) !important;
 }
