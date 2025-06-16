@@ -1,5 +1,10 @@
+:root {
+    --bs-primary: #d63384;
+    --bs-info: #6f42c1;
+}
+
 html {
-    color: #e9ecef !important;
+    color: #e9ecef;
     height: 100dvh;
 }
 
