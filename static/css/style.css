@@ -1,14 +1,14 @@
 :root {
-    --bs-body-bg: #f1f3f5;
-    /* Light slate */
-    --bs-body-color: #212529;
-    /* Dark text */
-    --bs-primary: #4a90e2;
-    /* Steel-blue (humidity) */
-    --bs-warning: #fd9644;
-    /* Sunrise orange (temperature) */
-    --bs-secondary: #6c757d;
-    /* Medium gray */
+    --bs-body-bg: #0d1b2a;
+    /* Midnight navy */
+    --bs-body-color: #e0e1dd;
+    /* Soft off-white */
+    --bs-primary: #22d3ee;
+    /* Cyan (humidity) */
+    --bs-warning: #fd7e14;
+    /* Sunset orange (temperature) */
+    --bs-secondary: #415a77;
+    /* Steely blue for borders/text */
 }
 
 html {
@@ -31,20 +31,20 @@ body {
 }
 
 .sticky-top {
-    background-color: var(--bs-primary) !important;
-    border-bottom: 1px solid var(--bs-secondary, #dee2e6) !important;
+    background-color: var(--bs-body-bg) !important;
+    border-bottom: 1px solid var(--bs-secondary) !important;
     z-index: 999;
 }
 
 .nav-pills .nav-link.active {
     background-color: var(--bs-primary) !important;
-    color: #fff !important;
+    color: #0d1b2a !important;
 }
 
 .nav-pills .nav-link:hover,
 .nav-pills .nav-link:focus {
     background-color: var(--bs-warning) !important;
-    color: #fff !important;
+    color: #0d1b2a !important;
 }
 
 .btn-primary:hover {
