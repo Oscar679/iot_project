@@ -1,21 +1,17 @@
 :root {
-    /* Dark mode base colors */
-    --bs-body-bg: #121212;
-    /* Almost-black background */
-    --bs-body-color: #E0E0E0;
-    /* Light gray text */
+    --bs-body-bg: #1e1e1e;
+    /* Dark gray */
+    --bs-body-color: #cbd5e1;
+    /* Soft pale gray */
+    --bs-primary: #4b5563;
+    /* Medium gray */
+    --bs-secondary: #6b7280;
+    /* Light gray */
+    --bs-info: #9ca3af;
+    /* Even lighter gray */
 
-    /* Accent colors */
-    --bs-primary: #BB86FC;
-    /* Lavender */
-    --bs-secondary: #03DAC6;
-    /* Teal */
-    --bs-info: #CF6679;
-    /* Soft red/pink */
-
-    /* (Optional) other Bootstrap variables */
-    --bs-link-color: #BB86FC;
-    --bs-link-hover-color: #E0E0E0;
+    --bs-link-color: #4b5563;
+    --bs-link-hover-color: #cbd5e1;
 }
 
 html {
