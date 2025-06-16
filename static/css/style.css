@@ -1,8 +1,12 @@
 :root {
-  --bs-body-bg:      #fafbfc;  /* Almost white */
-  --bs-body-color:   #333333;  /* Dark gray text */
-  --bs-primary:      #20c997;  /* Teal accent */
-  --bs-secondary:    #adb5bd;  /* Light gray for borders */
+    --bs-body-bg: #ffffff;
+    /* Pure white */
+    --bs-body-color: #444444;
+    /* Medium-dark gray text */
+    --bs-primary: #4a6fa5;
+    /* Steel-blue accent */
+    --bs-secondary: #e9ecef;
+    /* Soft gray background for cards */
 }
 
 html {
