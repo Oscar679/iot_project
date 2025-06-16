@@ -46,11 +46,6 @@ def insert_data():
     except mysql.connector.Error as err:
         return jsonify({"error": str(err)}), 500
     
-    
-# Start server
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
-    
 # Endpoint for fetching data
 @app.route("/api/current", methods=["GET"])
 def get_current_data():
@@ -72,3 +67,7 @@ def get_current_data():
             return jsonify({"error": "No data found"}), 404
     except mysql.connector.Error as err:
         return jsonify({"error": str(err)}), 500
+    
+    # Start server
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
