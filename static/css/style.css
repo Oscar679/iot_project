@@ -1,12 +1,14 @@
 :root {
-    --bs-body-bg: #2e2e2e;
-    /* charcoal */
-    --bs-body-color: #000000;
-    /* ivory */
-    --bs-primary: #ffc107;
-    /* amber */
-    --bs-secondary: #6c757d;
-    /* medium gray */
+    --bs-body-bg: #fcfcfc;
+    /* nearly white */
+    --bs-body-color: #2e2e2e;
+    /* dark slate */
+    --bs-primary: #a3d5ff;
+    /* pastel sky-blue */
+    --bs-warning: #ffd1b2;
+    /* pastel peach */
+    --bs-secondary: #e0e0e0;
+    /* light gray for borders */
 }
 
 html {
@@ -15,7 +17,7 @@ html {
 }
 
 body {
-    background-color: white !important;
+    background-color: var(--bs-body-bg) !important;
     color: var(--bs-body-color) !important;
 }
 
@@ -24,7 +26,7 @@ body {
 }
 
 #pills-tab {
-    padding: 6px;
+    padding: 12px;
     font-size: 16px;
     color: #fd7e14 !important;
     text-decoration: none;
@@ -32,7 +34,7 @@ body {
 
 .nav-item a {
     color: black;
-    margin: 8px;
+    margin-left: 8px;
 }
 
 .nav-item a:visited {
