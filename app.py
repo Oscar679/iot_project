@@ -51,7 +51,7 @@ def insert_data():
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
     
-# Fetching data
+# Endpoint for fetching data
 @app.route("/api/current", methods=["GET"])
 def get_current_data():
     try:
