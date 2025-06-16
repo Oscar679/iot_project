@@ -1,11 +1,14 @@
 html {
+    color: #212529;
     height: 100dvh;
 }
 
-body {}
+body {
+    background-color: #f8f9fa;
+}
 
 .row div {
-    border: 3px solid black;
+    border: 3px solid #6c757d;
 }
 
 #pills-tab {
@@ -14,5 +17,5 @@ body {}
 }
 
 .sticky-top {
-    background-color: pink;
+    background-color: #0d6efd;
 }
