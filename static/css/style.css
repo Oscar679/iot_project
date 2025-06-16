@@ -1,10 +1,14 @@
 :root {
-    --bs-body-bg: #f8f9fa;
+    --bs-body-bg: #f1f3f5;
+    /* Light slate */
     --bs-body-color: #212529;
-    --bs-primary: #17a2b8;
-    --bs-warning: #fd7e14;
-    --bs-danger: #dc3545;
+    /* Dark text */
+    --bs-primary: #4a90e2;
+    /* Steel-blue (humidity) */
+    --bs-warning: #fd9644;
+    /* Sunrise orange (temperature) */
     --bs-secondary: #6c757d;
+    /* Medium gray */
 }
 
 html {
@@ -17,41 +21,32 @@ body {
     color: var(--bs-body-color) !important;
 }
 
-/* Sticky nav background */
-.sticky-top {
-    background-color: var(--bs-body-bg) !important;
-    border-bottom: 1px solid var(--bs-secondary) !important;
+.row div {
+    border: 3px solid #adb5bd !important;
 }
 
-/* Active nav pill = humidity color */
+#pills-tab {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.sticky-top {
+    background-color: var(--bs-primary) !important;
+    border-bottom: 1px solid var(--bs-secondary, #dee2e6) !important;
+    z-index: 999;
+}
+
 .nav-pills .nav-link.active {
     background-color: var(--bs-primary) !important;
     color: #fff !important;
 }
 
-/* Hover = warmer */
-.nav-pills .nav-link:hover {
+.nav-pills .nav-link:hover,
+.nav-pills .nav-link:focus {
     background-color: var(--bs-warning) !important;
     color: #fff !important;
 }
 
-/* Buttons */
-.btn-primary {
-    background-color: var(--bs-primary);
-    border-color: var(--bs-primary);
-}
-
 .btn-primary:hover {
-    background-color: #138496;
-    /* slightly darker teal */
-}
-
-.btn-warning {
-    background-color: var(--bs-warning);
-    border-color: var(--bs-warning);
-}
-
-.btn-danger {
-    background-color: var(--bs-danger);
-    border-color: var(--bs-danger);
+    background-color: var(--bs-primary);
 }
