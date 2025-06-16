@@ -1,5 +1,7 @@
-html, body {
+html,
+body {
     height: 100dvh;
+    margin: 30px;
 }
 
 .row div {
