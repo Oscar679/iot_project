@@ -1,14 +1,14 @@
 :root {
-    --bs-body-bg: #1c1c1e;
-    /* Charcoal black */
-    --bs-body-color: #f2f2f7;
-    /* Pale gray */
-    --bs-primary: #33d6f7;
-    /* Electric blue (humidity) */
-    --bs-warning: #ff5d94;
-    /* Neon pink (temperature) */
-    --bs-secondary: #3a3a3c;
-    /* Dark gray for UI accents */
+    --bs-body-bg: #0b2f1a;
+    /* Midnight forest */
+    --bs-body-color: #e6f2ea;
+    /* Mint-cream */
+    --bs-primary: #7ed957;
+    /* Mint green (humidity) */
+    --bs-warning: #f26b38;
+    /* Ember orange (temperature) */
+    --bs-secondary: #2e4a35;
+    /* Deep green for borders */
 }
 
 html {
