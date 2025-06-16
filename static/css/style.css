@@ -28,7 +28,6 @@ body {
 #pills-tab {
     padding: 12px;
     font-size: 16px;
-    color: #fd7e14 !important;
     text-decoration: none;
 }
 
@@ -49,11 +48,11 @@ body {
 
 .nav-pills .nav-link.active {
     background-color: var(--bs-primary) !important;
-    color: var(--bs-body-bg) !important;
+    color: #333333 !important;
 }
 
 .nav-pills .nav-link:hover,
 .nav-pills .nav-link:focus {
-    background-color: var(--bs-warning) !important;
-    color: var(--bs-body-bg) !important;
+    background-color: var(--bs-danger) !important;
+    color: #333333 !important;
 }
