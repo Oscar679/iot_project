@@ -1,14 +1,14 @@
 :root {
-    --bs-primary: #ff6b6b;
-    /* Coral Red */
-    --bs-secondary: #ffe66d;
-    /* Soft Yellow */
-    --bs-body-bg: #fffaf0;
-    /* Ivory */
-    --bs-body-color: #333333;
-    /* Dark charcoal */
-    --bs-info: #4ecdc4;
-    /* Aqua Teal */
+    --bs-primary: #00ffea;
+    /* Neon Cyan */
+    --bs-secondary: #ff00d6;
+    /* Neon Magenta */
+    --bs-body-bg: #0a0a0a;
+    /* Almost-black */
+    --bs-body-color: #e5e5e5;
+    /* Light gray */
+    --bs-info: #ffff00;
+    /* Neon Yellow */
 }
 
 html {
