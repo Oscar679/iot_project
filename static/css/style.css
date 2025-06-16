@@ -14,3 +14,7 @@ body {
     padding: 10px;
     font-size: 14px;
 }
+
+.sticky-top bg-white {
+    background-color: dimgray;
+}
