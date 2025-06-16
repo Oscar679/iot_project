@@ -68,6 +68,20 @@ def get_current_data():
     except mysql.connector.Error as err:
         return jsonify({"error": str(err)}), 500
     
+
+# Defining routes for html files (different pages on website)
+@app.route("/")
+def home_page():
+    return render_template("index.html")
+
+@app.route("/aboutMe")
+def about_page():
+    return render_template("aboutMe.html")
+
+@app.route("/contact")
+def contact_page():
+    return render_template("contact.html")
+
     # Start server
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
