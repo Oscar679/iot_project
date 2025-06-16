@@ -1,17 +1,18 @@
 :root {
-    --bs-body-bg: #121212;
-    /* Almost black */
-    --bs-body-color: #d1e8e2;
-    /* Minty light */
-    --bs-primary: #2f855a;
-    /* Forest green */
-    --bs-secondary: #744210;
-    /* Dark brown */
-    --bs-info: #9ae6b4;
-    /* Light mint */
+    --bs-body-bg: #0b1d3a;
+    /* Very dark navy */
+    --bs-body-color: #e2e8f0;
+    /* Light blue-gray */
+    --bs-primary: #22d3ee;
+    /* Cyan */
+    --bs-secondary: #64748b;
+    /* Slate gray */
+    --bs-info: #38bdf8;
+    /* Sky blue */
 
-    --bs-link-color: #2f855a;
-    --bs-link-hover-color: #9ae6b4;
+    /* Optional extras */
+    --bs-link-color: #22d3ee;
+    --bs-link-hover-color: #38bdf8;
 }
 
 html {
