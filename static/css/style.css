@@ -23,7 +23,7 @@ body {
 
 .row {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     flex-wrap: wrap;
 }
 
