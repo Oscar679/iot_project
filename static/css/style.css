@@ -1,3 +1,7 @@
 html, body {
     height: 100dvh;
 }
+
+.row div {
+    border: 3px solid black;
+}
