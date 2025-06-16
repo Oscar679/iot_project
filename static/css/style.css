@@ -1,9 +1,15 @@
-html,
-body {
+html {
     height: 100dvh;
+}
+
+body {
     margin: 30px;
 }
 
 .row div {
     border: 3px solid black;
+}
+
+.nav nav-pills nav-fill {
+    position: sticky;
 }
