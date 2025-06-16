@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("container");
 
     async function fetchData() {
-        const url = "http://climatebot.net/api/current";
+        const url = "/api/current";
 
         try {
             const response = await fetch(url);
