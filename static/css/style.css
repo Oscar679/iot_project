@@ -25,14 +25,14 @@ body {
 
 #pills-tab {
     padding: 10px;
-    font-size: 22px;
+    font-size: 16px;
     color: #fd7e14 !important;
     text-decoration: none;
 }
 
 .nav-item a {
     color: black;
-    padding: 20px;
+    margin: 8px;
 }
 
 .nav-item a:visited {
