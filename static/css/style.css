@@ -14,34 +14,44 @@ html {
 
 body {
     background-color: var(--bs-body-bg) !important;
+    color: var(--bs-body-color) !important;
 }
 
-.row div {
-    border: 3px solid #adb5bd !important;
-}
-
-#pills-tab {
-    padding: 10px;
-    font-size: 14px;
-}
-
+/* Sticky nav background */
 .sticky-top {
-    background-color: var(--bs-primary) !important;
-    border-bottom: 1px solid var(--bs-secondary, #dee2e6) !important;
-    z-index: 999;
+    background-color: var(--bs-body-bg) !important;
+    border-bottom: 1px solid var(--bs-secondary) !important;
 }
 
+/* Active nav pill = humidity color */
 .nav-pills .nav-link.active {
     background-color: var(--bs-primary) !important;
     color: #fff !important;
 }
 
-.nav-pills .nav-link:hover,
-.nav-pills .nav-link:focus {
-    background-color: var(--bs-info) !important;
+/* Hover = warmer */
+.nav-pills .nav-link:hover {
+    background-color: var(--bs-warning) !important;
     color: #fff !important;
 }
 
-.btn-primary:hover {
+/* Buttons */
+.btn-primary {
     background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-primary:hover {
+    background-color: #138496;
+    /* slightly darker teal */
+}
+
+.btn-warning {
+    background-color: var(--bs-warning);
+    border-color: var(--bs-warning);
+}
+
+.btn-danger {
+    background-color: var(--bs-danger);
+    border-color: var(--bs-danger);
 }
