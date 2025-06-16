@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    background-color: var(--bs-body-bg) !important;
+    background-color: #656464 !important;
     color: var(--bs-body-color) !important;
 }
 
