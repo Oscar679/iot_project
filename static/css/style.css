@@ -25,7 +25,6 @@ body {
     border: 3px solid var(--bs-secondary) !important;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     margin: 4px;
-    width: fit-content;
 }
 
 #pills-tab {
