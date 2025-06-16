@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import mysql.connector
 import os
 from dotenv import load_dotenv
@@ -18,8 +18,8 @@ app = Flask(__name__)
 
 # Route to check if the server is running
 @app.route("/")
-def home():
-    return "IoT Project API is running!"
+def home_page():
+    return render_template("index.html")
 
 # Endpoint to insert sensor data
 @app.route("/api/data", methods=["POST"])
