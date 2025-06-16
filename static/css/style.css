@@ -1,9 +1,14 @@
 :root {
-    --bs-primary: #d63384;
-    /* --bs-warning:   #fd7e14; */
-    --bs-body-bg: #ffffff;
-    --bs-body-color: #343a40;
-    --bs-info: #6f42c1;
+    --bs-primary: #1b4965;
+    /* Deep Navy */
+    --bs-secondary: #406882;
+    /* Steel Blue */
+    --bs-body-bg: #f0f4f8;
+    /* Light slate */
+    --bs-body-color: #14213d;
+    /* Very dark navy */
+    --bs-info: #219ebc;
+    /* Bright Cyan */
 }
 
 html {
@@ -42,5 +47,5 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: darken(var(--bs-primary), 10%);
+    background-color: var(--bs-primary);
 }
