@@ -1,21 +1,22 @@
 html {
-    color: #212529;
     height: 100dvh;
 }
 
-body {
-    background-color: #f8f9fa;
-}
+body {}
 
-.row div {
-    border: 3px solid #6c757d;
-}
+.row div {}
 
 #pills-tab {
     padding: 10px;
     font-size: 14px;
 }
 
-.sticky-top {
-    background-color: #0d6efd;
+.sticky-top {}
+
+:root {
+    --bs-primary: #d63384;
+    --bs-warning: #fd7e14;
+    --bs-body-bg: #ffffff;
+    --bs-body-color: #343a40;
+    --bs-info: #6f42c1;
 }
