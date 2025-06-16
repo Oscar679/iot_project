@@ -1,14 +1,14 @@
 :root {
-    --bs-primary: #a0c1b8;
-    /* Sage green */
-    --bs-secondary: #ffcbc1;
-    /* Soft peach */
-    --bs-body-bg: #ffffff;
-    /* White */
-    --bs-body-color: #333333;
-    /* Dark gray */
-    --bs-info: #d1e8e2;
-    /* Mint */
+    --bs-primary: #b33f62;
+    /* Mars Red */
+    --bs-secondary: #e07a5f;
+    /* Rust Orange */
+    --bs-body-bg: #2a1e5c;
+    /* Deep Violet */
+    --bs-body-color: #fdfcdc;
+    /* Pale Cream */
+    --bs-info: #f2cc8f;
+    /* Soft Apricot */
 }
 
 html {
