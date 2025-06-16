@@ -21,12 +21,6 @@ body {
     color: var(--bs-body-color) !important;
 }
 
-.row {
-    display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
-}
-
 .row div {
     border: 3px solid var(--bs-secondary) !important;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
