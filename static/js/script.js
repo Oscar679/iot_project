@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
             dataRows.reverse().forEach(row => {
-                const time = new Date(row.timestamp).toLocaleDateString() + " " + new Date(row.timestamp).toLocaleTimeString();
+                const time = new Date(row.timestamp).toLocaleTimeString();
                 tempChart.data.labels.push(time);
                 tempChart.data.datasets[0].data.push(row.temperature)
 
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             console.log(data.timestamp);
 
-            const time = new Date(data.timestamp).toLocaleDateString() + " " + new Date(data.timestamp).toLocaleTimeString();
+            const time = new Date(data.timestamp).toLocaleTimeString();
             tempChart.data.labels.push(time);
             tempChart.data.datasets[0].data.push(data.temperature)
 
