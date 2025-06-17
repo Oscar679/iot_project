@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const lastUpdated = document.querySelector(".lastUpdated");
     const temporaryTempCanvas = document.getElementById("tempChart").getContext("2d");
     const temporaryHumidityCanvas = document.getElementById("humidityChart").getContext("2d");
+    const temporaryAllDataCanvas = document.getElementById("allDataChart").getContext("2d");
     // const avgHumiditySelector = document.getElementById("avgHumidity");
 
     //let avgHumidity = 0;
@@ -19,6 +20,41 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error('Could not find the humidity canvas');
         return;
     }
+
+    if (temporaryAllDataCanvas == null) {
+        console.error('Could not find the all-time-data canvas');
+        return;
+    }
+
+    const allDataChart = new Chart(temporaryAllDataCanvas, {
+        type: 'line',
+        data: {
+            labels: [],
+            // labels: data.map(row => row.data.timestamp.toLocaleTimeString()),
+            datasets: [
+                {
+                    label: 'Temperature (°C)',
+                    data: [],
+                    backgroundColor: '#ff6b6b',
+                    //data: data.map(row => row.temperature)
+                }
+            ]
+        }, options: {
+            animation: false,
+            scales: {
+                x: { title: { display: true, text: 'Time' } },
+                y: { beginAtZero: true, title: { display: true, text: '°C' } }
+            },
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    enabled: false
+                }
+            }
+        }
+    });
 
     const tempChart = new Chart(temporaryTempCanvas, {
         type: 'line',
@@ -151,5 +187,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
     fetchData();
     setInterval(fetchData, 5000);
+
+    async function fetchAllData() {
+        const url = "/api/allData"
+
+        try {
+            const response = await fetch(url);
+            if (!response.ok) {
+                throw new Error('Response status: ' + response.status);
+            }
+
+            const data = await response.json();
+            console.log(data);
+
+            const time = new Date(data.timestamp).toLocaleTimeString();
+            tempChart.data.labels.push(time);
+            tempChart.data.datasets[0].data.push(data.temperature)
+
+            humidityChart.data.labels.push(time);
+            humidityChart.data.datasets[0].data.push(data.humidity);
+
+            allDataChart.update();
+        } catch (error) {
+            console.error(error.message);
+        }
+    }
+
+    fetchAllData();
 
 });

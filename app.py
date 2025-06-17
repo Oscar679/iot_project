@@ -96,6 +96,28 @@ def fetch_history():
             return jsonify({"error": "No data found"}), 404
     except mysql.connector.Error as err:
         return jsonify({"error": str(err)}), 500
+    
+    
+@app.route("/api/allData", methods=["GE"])
+def fetch_all_data():
+    try:
+        conn = mysql.connector.connect(
+            host=DB_HOST,
+            user=DB_USER,
+            password=DB_PASSWORD,
+            database=DB_NAME
+        )
+        cursor = conn.cursor(dictionary=True)
+        cursor.execute("SELECT * FROM sensor_data ORDER BY timestamp")
+        rows = cursor.fetchall()
+        cursor.close()
+        conn.close()
+        if rows:
+            return jsonify(rows)
+        else:
+            return jsonify({"error": "No data found"}), 404
+    except mysql.connector.Error as err:
+        return jsonify({"error": str(err)}), 500
 
     # Start server
 if __name__ == "__main__":
