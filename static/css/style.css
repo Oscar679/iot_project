@@ -81,13 +81,13 @@ body {
 
 .row1>div,
 .row2>div {
-    margin: 10%;
+    margin: 4%;
 }
 
 #tempChartInfo,
 #humidityChartInfo {
     margin: auto;
-    margin-right: 4%;
+    margin-right: 10%;
 }
 
 @media screen and (max-width: 1100px) {
