@@ -3,13 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementsByClassName("row");
     currentTempBox = document.getElementById("currentTemp");
     currentHumidityBox = document.getElementById("currentHumidity");
-    lastUpdated = document.getElementsByClassName("lastUpdated");
+    lastUpdated = document.getElementsByClassName(".lastUpdated");
 
     async function fetchData() {
         const url = "/api/current";
 
         try {
-            const response = await fetch(url);
+            const response = await fetch(url);  
             if (!response.ok) {
                 throw new Error('Response status: ' + response.status);
             }
@@ -17,13 +17,13 @@ document.addEventListener("DOMContentLoaded", () => {
             const data = await response.json();
             console.log(data);
             currentTempBox.innerHTML = "";
-            currentTempBox.innerHTML = data.temperature;
+            currentTempBox.innerHTML = data.temperature + " °C";
 
             currentHumidityBox.innerHTML = "";
-            currentHumidityBox.innerHTML = data.humidity;
+            currentHumidityBox.innerHTML = data.humidity + " %";
 
             lastUpdated.innerHTML = "";
-            lastUpdated.innerText = new Date(data.timestamp).toLocaleTimeString();
+            lastUpdatedBox.innerText = new Date(data.timestamp).toLocaleTimeString();
             console.log(data.timestamp);
         } catch (error) {
             console.error(error.message);
