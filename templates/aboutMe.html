@@ -30,11 +30,11 @@
             <!-- Sidebar -->
             <aside class="col-lg-4 text-center">
                 <img src="{{ url_for('static', filename='img/profile.jpg') }}" alt="Your Name" class="rounded-circle mb-3" style="width:150px; height:150px; object-fit:cover;" />
-                <h2 class="h4 mb-1">Your Name</h2>
+                <h2 class="h4 mb-1">Oscar Ekberg</h2>
                 <p class="text-muted mb-3">Full-Stack Developer & IoT Enthusiast</p>
                 <ul class="list-unstyled">
-                    <li><strong>Location:</strong> Stockholm, Sweden</li>
-                    <li><strong>Email:</strong> you@example.com</li>
+                    <li><strong>Location:</strong> Växjö, Sweden</li>
+                    <li><strong>Email:</strong> oscarekberg@hotmail.com</li>
                     <li>
                         <strong>GitHub:</strong>
                         <a href="https://github.com/you" target="_blank" rel="noopener">you</a>
@@ -59,22 +59,6 @@
                     Raspberry Pi projects, or sketching UI designs.
                 </p>
             </article>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="container py-5 bg-white">
-        <h3 class="mb-4">Skills</h3>
-        <div class="row row-cols-2 row-cols-md-4 g-3">
-            {% for skill in ['Python','Flask','AWS','MicroPython'] %}
-            <div class="col">
-                <div class="card h-100 text-center border-secondary">
-                    <div class="card-body py-3">
-                        <h5 class="card-title mb-0">{{ skill }}</h5>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
         </div>
     </section>
 
