@@ -43,6 +43,7 @@ body {
 }
 
 .sticky-top {
+    /* background-color: var(--bs-body-bg) !important; */
     border-bottom: 1px solid var(--bs-secondary) !important;
     z-index: 999;
 }
