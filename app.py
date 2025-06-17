@@ -98,7 +98,7 @@ def fetch_history():
         return jsonify({"error": str(err)}), 500
     
     
-@app.route("/api/allData", methods=["GE"])
+@app.route("/api/allData", methods=["GET"])
 def fetch_all_data():
     try:
         conn = mysql.connector.connect(
