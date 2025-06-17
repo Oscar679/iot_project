@@ -54,7 +54,7 @@ def insert_data():
     except mysql.connector.Error as err:
         return jsonify({"error": str(err)}), 500
     
-# Endpoint for fetching data
+# Endpoint for fetching most recent measure
 @app.route("/api/current", methods=["GET"])
 def get_current_data():
     try:
@@ -65,12 +65,33 @@ def get_current_data():
             database=DB_NAME
         )
         cursor = conn.cursor(dictionary=True)
-        cursor.execute("SELECT temperature, humidity, timestamp FROM sensor_data ORDER BY timestamp DESC LIMIT 20")
+        cursor.execute("SELECT temperature, humidity, timestamp FROM sensor_data ORDER BY timestamp DESC LIMIT 1")
         row = cursor.fetchone()
         cursor.close()
         conn.close()
         if row:
             return jsonify(row)
+        else:
+            return jsonify({"error": "No data found"}), 404
+    except mysql.connector.Error as err:
+        return jsonify({"error": str(err)}), 500
+
+@app.route("/api/history", methods=["GET"])
+def fetch_history():
+    try:
+        conn = mysql.connector.connect(
+            host=DB_HOST,
+            user=DB_USER,
+            password=DB_PASSWORD,
+            database=DB_NAME
+        )
+        cursor = conn.cursor(dictionary=True)
+        cursor.execute("SELECT temperature, humidity, timestamp FROM sensor_data ORDER BY timestamp DESC LIMIT 20")
+        rows = cursor.fetchall()
+        cursor.close()
+        conn.close()
+        if rows:
+            return jsonify(rows)
         else:
             return jsonify({"error": "No data found"}), 404
     except mysql.connector.Error as err:

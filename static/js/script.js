@@ -74,6 +74,38 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    async function fetchHistoricalData() {
+        const url = "/api/history";
+
+        try {
+            const response = await fetch(url);
+            if (!response.ok) {
+                throw new Error('Response status: ' + response.status);
+            }
+
+            const dataRows = await response.json();
+            console.log(dataRows);
+
+
+            dataRows.forEach(row => {
+                const time = new Date(row.timestamp).toLocaleDateString() + " " + new Date(row.timestamp).toLocaleTimeString();
+                tempChart.data.labels.push(time);
+                tempChart.data.datasets[0].data.push(row.temperature)
+
+                humidityChart.data.labels.push(time);
+                humidityChart.data.datasets[0].data.push(row.humidity);
+            });
+
+            tempChart.update();
+            humidityChart.update();
+
+        } catch (error) {
+            console.error(error.message);
+        }
+    }
+
+    fetchHistoricalData();
+
     async function fetchData() {
         const url = "/api/current";
 
