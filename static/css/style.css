@@ -91,4 +91,9 @@ body {
         gap: 2rem;
         margin-bottom: 3rem;
     }
+
+    .row1>div,
+    .row2>div {
+        margin: 1%;
+    }
 }
