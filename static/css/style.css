@@ -118,6 +118,7 @@ body {
     #tempChartInfo,
     #humidityChartInfo {
         margin-right: 0%;
+        margin-left: 0%;
     }
 }
 
@@ -125,7 +126,7 @@ body {
 
     .row1>div,
     .row2>div {
-        width: 100%;
+        width: 99%;
     }
 
     #tempChart,
