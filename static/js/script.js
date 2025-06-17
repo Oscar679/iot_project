@@ -50,14 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const data = await response.json();
             console.log(data);
-            currentTempBox.textContent = "";
-            currentTempBox.textContent = data.temperature + " °C";
-
-            currentHumidityBox.textContent = "";
-            currentHumidityBox.textContent = data.humidity + " %";
-
-            lastUpdated.textContent = "";
-            lastUpdated.textContent = new Date(data.timestamp).toLocaleDateString() + " " + new Date(data.timestamp).toLocaleTimeString();
+            
             console.log(data.timestamp);
 
             const time = new Date(data.timestamp).toLocaleDateString() + " " + new Date(data.timestamp).toLocaleTimeString();
