@@ -58,10 +58,13 @@ body {
     color: #333333 !important;
 }
 
-.row1, .row2 {
+.row1,
+.row2 {
     display: grid;
     gap: 5rem;
     margin-bottom: 5rem;
+
+    border: 3px solid var(--bs-secondary);
 }
 
 .row1 {
