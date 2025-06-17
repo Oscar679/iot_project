@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     label: 'Temperature (°C)',
                     data: [],
-                    backgroundColor: '#ff6b6b'
+                    backgroundColor: '#ff6b6b',
                     //data: data.map(row => row.temperature)
                 }
             ]
@@ -73,7 +73,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     label: 'Temperature (°C)',
                     data: [],
                     backgroundColor: '#ff6b6b',
-                    color: '#ff6b6b'
+                    borderColor: '#ff6b6b',
+                    borderWidth: 4,
                     //data: data.map(row => row.temperature)
                 }
             ]
@@ -103,7 +104,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     label: 'Percentage (%)',
                     data: [],
                     backgroundColor: '#20c997',
-                    color: '#20c997'
                 }
             ]
         }, options: {
