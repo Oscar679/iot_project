@@ -45,7 +45,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 x:
                 {
                     title: { display: true, text: 'Time' },
-                    ticks: { autoSkip: false, maxTicksLimit: 2 }
+                    ticks: {
+                        count: 2
+                    }
                 },
                 y: { beginAtZero: true, title: { display: true, text: '°C' } }
             },
