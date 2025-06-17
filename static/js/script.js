@@ -38,7 +38,16 @@ document.addEventListener("DOMContentLoaded", () => {
                     borderColor: '#20c997',
                     borderWidth: 4,
                     pointRadius: 0,
+                },
+                {
+                    label: 'Percentage (%)',
+                    data: [],
+                    backgroundColor: '#20c997',
+                    borderColor: '#20c997',
+                    borderWidth: 4,
+                    pointRadius: 4,
                 }
+
             ]
         }, options: {
             animation: false,
@@ -223,7 +232,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 allDataChart.data.datasets[0].data.push(row.temperature)
 
                 // humidityChart.data.labels.push(time);
-                // humidityChart.data.datasets[0].data.push(row.humidity);
+                allDataChart.data.datasets[0].data.push(row.humidity);
             });
 
             allDataChart.update();
