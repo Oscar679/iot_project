@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const lastUpdated = document.querySelector(".lastUpdated");
     const temporaryTempCanvas = document.getElementById("tempChart").getContext("2d");
     const temporaryHumidityCanvas = document.getElementById("humidityChart").getContext("2d");
-    const avgHumiditySelector = document.getElementById("avgHumidity");
+    // const avgHumiditySelector = document.getElementById("avgHumidity");
 
-    let avgHumidity = 0;
+    //let avgHumidity = 0;
 
 
     if (temporaryTempCanvas == null) {
@@ -98,9 +98,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 humidityChart.data.labels.push(time);
                 humidityChart.data.datasets[0].data.push(row.humidity);
-
-                avgHumidity += row.humidity;
-                console.log(avgHumidity);
             });
 
             tempChart.update();
