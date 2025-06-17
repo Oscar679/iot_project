@@ -57,3 +57,17 @@ body {
     background-color: var(--bs-warning) !important;
     color: #333333 !important;
 }
+
+.row1, .row2 {
+    display: grid;
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
+
+.row1 {
+    grid-template-columns: 2fr 1fr;
+}
+
+.row2 {
+    grid-template-columns: 1fr 2fr;
+}
