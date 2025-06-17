@@ -110,8 +110,7 @@ body {
 
     .row1>div,
     .row2>div {
-        width: 100%;
-        padding: 2px;
+        width: 99%;
     }
 
     #tempChart,
