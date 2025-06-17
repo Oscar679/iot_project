@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             lastUpdated.textContent = "";
             lastUpdated.textContent = new Date(data.timestamp).toLocaleDateString();
+            lastUpdated.textContent += new Date(data.timestamp).toLocaleTimeString();
             console.log(data.timestamp);
         } catch (error) {
             console.error(error.message);
