@@ -97,3 +97,16 @@ body {
         margin: 1%;
     }
 }
+
+@media screen and (max-width: 950px) {
+
+    .row1,
+    .row2 {
+        grid-template-rows: auto;
+    }
+
+    .row1>div,
+    .row2>div {
+        margin: 1%;
+    }
+}
