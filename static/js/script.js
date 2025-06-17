@@ -203,8 +203,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             dataRows.forEach(row => {
                 const time = new Date(row.timestamp).toLocaleTimeString();
-                tempChart.data.labels.push(time);
-                tempChart.data.datasets[0].data.push(row.temperature)
+                allDataChart.data.labels.push(time);
+                allDataChart.data.datasets[0].data.push(row.temperature)
 
                 // humidityChart.data.labels.push(time);
                 // humidityChart.data.datasets[0].data.push(row.humidity);
