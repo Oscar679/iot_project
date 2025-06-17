@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             lastUpdated.innerHTML = "";
             lastUpdated.innerHTML = data.timestamp;
+            console.log(data.timestamp);
         } catch (error) {
             console.error(error.message);
         }
