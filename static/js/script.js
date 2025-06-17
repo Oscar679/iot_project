@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    const tempChart = new Chart(ctx, {
+    const tempChart = new Chart(temporaryCanvas, {
         type: 'bar',
         data: {
             labels: [],
