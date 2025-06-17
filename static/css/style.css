@@ -55,6 +55,6 @@ body {
 
 .nav-pills .nav-link:hover,
 .nav-pills .nav-link:focus {
-    background-color: var(--bs-primary) !important;
+    background-color: var(--bs-warning) !important;
     color: #333333 !important;
 }
