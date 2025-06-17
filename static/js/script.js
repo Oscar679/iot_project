@@ -3,13 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const currentTempBox = document.getElementById("currentTemp");
     const currentHumidityBox = document.getElementById("currentHumidity");
     const lastUpdated = document.querySelector(".lastUpdated");
-    const temporaryCanvas = document.getElementById("tempChart").getContext("2d");
+    const temporaryTempCanvas = document.getElementById("tempChart").getContext("2d");
 
-    if (temporaryCanvas == null) {
+    if (temporaryTempCanvas == null) {
         return;
     }
 
-    const tempChart = new Chart(temporaryCanvas, {
+    const tempChart = new Chart(temporaryTempCanvas, {
         type: 'bar',
         data: {
             labels: [],
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const data = await response.json();
             console.log(data);
-            
+
             console.log(data.timestamp);
 
             const time = new Date(data.timestamp).toLocaleDateString() + " " + new Date(data.timestamp).toLocaleTimeString();
@@ -69,6 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     fetchData();
-    setInterval(fetchData, 10_000);
+    setInterval(fetchData, 5000);
 
 });
