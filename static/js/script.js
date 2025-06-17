@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
             tempChart.data.labels.push(time);
             tempChart.data.datasets[0].data.push(data.temperature)
 
-            if (tempChart.data.labels.length > 2) {
+            if (tempChart.data.labels.length > 3) {
                 tempChart.data.labels.shift();
                 tempChart.data.datasets[0].data.shift();
             }
