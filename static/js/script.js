@@ -202,7 +202,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
             dataRows.forEach(row => {
-                const time = new Date(row.timestamp).toLocaleTimeString();
+                const time = new Date(row.timestamp).toLocaleDateString();
                 allDataChart.data.labels.push(time);
                 allDataChart.data.datasets[0].data.push(row.temperature)
 
