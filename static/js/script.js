@@ -100,6 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 humidityChart.data.datasets[0].data.push(row.humidity);
 
                 avgHumidity += row.humidity;
+                console.log(avgHumidity);
             });
 
             tempChart.update();
@@ -141,10 +142,6 @@ document.addEventListener("DOMContentLoaded", () => {
             if (humidityChart.data.labels.length > 5) {
                 humidityChart.data.labels.shift();
                 humidityChart.data.datasets[0].data.shift();
-
-                humidityChart.data.labels.forEach(row => {
-                    console.log(row);
-                });
             }
 
             tempChart.update();
