@@ -3,7 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const currentTempBox = document.getElementById("currentTemp");
     const currentHumidityBox = document.getElementById("currentHumidity");
     const lastUpdated = document.querySelector(".lastUpdated");
-    const ctx = document.getElementById("tempChart").getContext("2d");
+    const temporaryCanvas = document.getElementById("tempChart").getContext("2d");
+
+    if (temporaryCanvas == null) {
+        return;
+    }
 
     const tempChart = new Chart(ctx, {
         type: 'bar',
