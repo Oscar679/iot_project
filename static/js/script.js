@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementsByClassName("row");
     const currentTempBox = document.getElementById("currentTemp");
     const currentHumidityBox = document.getElementById("currentHumidity");
-    const lastUpdated = document.querySelectorAll(".lastUpdated");
+    const lastUpdated = document.querySelector(".lastUpdated");
 
     async function fetchData() {
         const url = "/api/current";
