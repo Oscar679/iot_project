@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
             currentHumidityBox.innerHTML = data.humidity;
 
             lastUpdated.innerHTML = "";
-            lastUpdated.innerHTML = new Date(data.timestamp).toLocaleTimeString;
+            lastUpdated.innerText = new Date(data.timestamp).toLocaleTimeString();
             console.log(data.timestamp);
         } catch (error) {
             console.error(error.message);
