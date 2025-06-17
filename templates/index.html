@@ -28,27 +28,20 @@
     <div class="container text-center mt-10%" id="contentContainer">
         <!-- Stack the columns on mobile by making one full-width and the other half-width -->
 
-        <div class="col-sm-8">
-            <div class="col" id="currentTemp">
+        <div class="row">
+            <div class="col-sm-8" id="currentTemp">
                 <canvas id="tempChart"></canvas>
             </div>
-        </div>
-        <div class="col-sm-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio id veniam sed nobis quis iste placeat similique expedita laboriosam dolore dolorem possimus tempore, libero porro, assumenda iusto laudantium officiis reprehenderit?
-            Quo placeat reprehenderit et? Provident voluptatibus vitae sed quis, in, illo voluptas sit voluptate nemo aliquam optio eveniet. Reprehenderit tempore doloremque fugiat veniam eum quis modi iusto voluptas laboriosam! Qui.
-            Explicabo dolore, impedit corrupti, et eum alias eos at repudiandae reiciendis, eligendi veniam! Veritatis quia quas modi totam? Mollitia beatae dolore nesciunt omnis nulla labore aliquam incidunt unde a perspiciatis?</div>
-
-        <div class="col-sm-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt ipsum dolores laborum voluptas nulla libero alias veniam dignissimos, eum consequuntur? Harum porro eius unde accusamus voluptates inventore a sit laborum.
-            Aliquam error quam ipsam ducimus unde corrupti adipisci, atque beatae delectus, inventore reprehenderit impedit aliquid! Rem quia, vero, dolorum amet tempora odit magni, deleniti id error est perferendis voluptatum quod.</div>
-        <div class="col-sm-8">
-            <div class="col" id="currentHumidity">
+            <div class="col-sm-4">col-sm-4</div>
+            <div class="col-sm-4">col-sm-4</div>
+            <div class="col-sm-8" id="currentHumidity">
                 <canvas id="humidityChart"></canvas>
             </div>
         </div>
-    </div>
 
 
 
-    <!-- <div class="row">
+        <!-- <div class="row">
             <div class="col" id="currentTemp">
                 <canvas id="tempChart"></canvas>
             </div>
@@ -71,17 +64,17 @@
                 Modi quisquam perferendis ea dolorem minus placeat necessitatibus inventore quas voluptatibus, repellendus adipisci qui fuga aperiam nemo ipsa sequi impedit vitae et aspernatur consequatur atque quae. Neque asperiores quod inventore!
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat ullam ut reiciendis dicta veritatis vel cumque rem repudiandae, nesciunt unde molestiae. Quibusdam, laborum possimus? Magnam iste hic eveniet dolores laudantium?
             </div>
-        </div> -->
-    </div>
-
-    <footer class="bg-light text-center text-muted py-3 mt-auto">
-        <div class="container">
-            &copy; 2025 Oscar Ekberg. All rights reserved.
         </div>
-    </footer>
+    </div> -->
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+        <footer class="bg-light text-center text-muted py-3 mt-auto">
+            <div class="container">
+                &copy; 2025 Oscar Ekberg. All rights reserved.
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 
 </html>
