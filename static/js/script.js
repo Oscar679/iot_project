@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const tempChart = new Chart(temporaryTempCanvas, {
-        type: 'bar',
+        type: 'line',
         data: {
             labels: [],
             // labels: data.map(row => row.data.timestamp.toLocaleTimeString()),
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const humidityChart = new Chart(temporaryHumidityCanvas, {
-        type: 'bar',
+        type: 'line',
         data: {
             labels: [],
             datasets: [
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
             tempChart.data.labels.push(time);
             tempChart.data.datasets[0].data.push(data.temperature)
 
-            if (tempChart.data.labels.length > 3) {
+            if (tempChart.data.labels.length > 20) {
                 tempChart.data.labels.shift();
                 tempChart.data.datasets[0].data.shift();
             }
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
             humidityChart.data.labels.push(time);
             humidityChart.data.datasets[0].data.push(data.humidity);
 
-            if (humidityChart.data.labels.length > 3) {
+            if (humidityChart.data.labels.length > 20) {
                 humidityChart.data.labels.shift();
                 humidity.data.datasets[0].data.shift();
             }
