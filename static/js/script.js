@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (humidityChart.data.labels.length > 20) {
                 humidityChart.data.labels.shift();
-                humidity.data.datasets[0].data.shift();
+                humidityChart.data.datasets[0].data.shift();
             }
 
             tempChart.update();
