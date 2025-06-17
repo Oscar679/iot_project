@@ -23,8 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
             currentHumidityBox.textContent = data.humidity + " %";
 
             lastUpdated.textContent = "";
-            lastUpdated.textContent = new Date(data.timestamp).toLocaleDateString();
-            lastUpdated.textContent += new Date(data.timestamp).toLocaleTimeString();
+            lastUpdated.textContent = new Date(data.timestamp).toLocaleDateString() + " " + new Date(data.timestamp).toLocaleTimeString();
             console.log(data.timestamp);
         } catch (error) {
             console.error(error.message);
