@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
             humidityChart.data.datasets[0].data.push(data.humidity);
 
             if (humidityChart.data.labels.length > 3) {
-                humidityChart.data.labels.shify();
+                humidityChart.data.labels.shift();
                 humidity.data.datasets[0].data.shift();
             }
 
