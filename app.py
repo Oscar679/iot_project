@@ -86,7 +86,7 @@ def fetch_history():
             database=DB_NAME
         )
         cursor = conn.cursor(dictionary=True)
-        cursor.execute("SELECT temperature, humidity, timestamp FROM sensor_data ORDER BY timestamp DESC LIMIT 20")
+        cursor.execute("SELECT temperature, humidity, timestamp FROM sensor_data ORDER BY timestamp DESC LIMIT 5")
         rows = cursor.fetchall()
         cursor.close()
         conn.close()
