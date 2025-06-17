@@ -38,6 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     backgroundColor: '#ff6b6b',
                     borderColor: '#20c997',
                     borderWidth: 4,
+                    pointBackgroundColor: '#20c997',
+                    pointBorderColor: '#20c997',
                     pointRadius: 4,
                     //data: data.map(row => row.temperature)
                 }
