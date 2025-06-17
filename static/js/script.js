@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const tempChart = new Chart(temporaryTempCanvas, {
-        type: 'bar',
+        type: 'line',
         data: {
             labels: [],
             // labels: data.map(row => row.data.timestamp.toLocaleTimeString()),
@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     label: 'Temperature (°C)',
                     data: [],
+                    borderColor: '#ff6b6b',
                     backgroundColor: '#ff6b6b',
                     //data: data.map(row => row.temperature)
                 }
