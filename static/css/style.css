@@ -19,6 +19,7 @@ html {
 body {
     background-color: var(--bs-body-bg) !important;
     color: var(--bs-body-color) !important;
+    width: 80dvh;
 }
 
 .row div {
