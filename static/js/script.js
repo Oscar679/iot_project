@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     borderColor: '#20c997',
                     borderWidth: 4,
                     pointRadius: 0,
+                    order: 1,
                 },
                 {
                     label: 'Percentage (%)',
@@ -46,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     borderColor: '#20c997',
                     borderWidth: 4,
                     pointRadius: 4,
+                    order: 2,
                 }
 
             ]
