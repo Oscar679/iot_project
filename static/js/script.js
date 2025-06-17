@@ -197,15 +197,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 throw new Error('Response status: ' + response.status);
             }
 
-            const data = await response.json();
-            console.log(data);
+            const dataRows = await response.json();
+            console.log(dataRows);
 
-            const time = new Date(data.timestamp).toLocaleTimeString();
-            tempChart.data.labels.push(time);
-            tempChart.data.datasets[0].data.push(data.temperature)
 
-            humidityChart.data.labels.push(time);
-            humidityChart.data.datasets[0].data.push(data.humidity);
+            dataRows.forEach(row => {
+                const time = new Date(row.timestamp).toLocaleTimeString();
+                tempChart.data.labels.push(time);
+                tempChart.data.datasets[0].data.push(row.temperature)
+
+                // humidityChart.data.labels.push(time);
+                // humidityChart.data.datasets[0].data.push(row.humidity);
+            });
 
             allDataChart.update();
         } catch (error) {
@@ -214,5 +217,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     fetchAllData();
-
 });
