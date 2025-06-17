@@ -42,7 +42,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }, options: {
             animation: false,
             scales: {
-                x: { title: { display: true, text: 'Time' } },
+                x:
+                {
+                    title: { display: true, text: 'Time' },
+                    ticks: { autoSkip: true, maxTicksLimit: 2 }
+                },
                 y: { beginAtZero: true, title: { display: true, text: '°C' } }
             },
             plugins: {
@@ -200,6 +204,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const dataRows = await response.json();
             console.log(dataRows);
 
+            // const firstTimeStamp = new Date(dataRows[0].timestamp).toLocaleDateString;
+            // allDataChart.data.labels[0].push(firstTimeStamp);
 
             dataRows.forEach(row => {
                 const time = new Date(row.timestamp).toLocaleDateString();
