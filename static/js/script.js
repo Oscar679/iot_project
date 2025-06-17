@@ -1,6 +1,7 @@
 /* For reference: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch */
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementsByClassName("row");
+    currentTempBox = document.getElementById("currentTemp");
 
     async function fetchData() {
         const url = "/api/current";
@@ -13,7 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const data = await response.json();
             console.log(data);
-            container.innerHTML = data.temperature;
+            currentTempBox.innerHTML = "";
+            currentTempBox.innerHTML = data.temperature;
         } catch (error) {
             console.error(error.message);
         }
