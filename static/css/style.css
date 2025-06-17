@@ -1,14 +1,14 @@
 :root {
-    --bs-body-bg: #f7fffa;
-    /* mint-white */
-    --bs-body-color: #333333;
-    /* charcoal */
-    --bs-primary: #98ff98;
-    /* mint green */
-    --bs-danger: #e8e0ff;
-    /* soft lavender */
-    --bs-secondary: #d1d1d1;
-    /* pale gray */
+    --bs-body-bg: #fcfcfc;
+    /* Off-white */
+    --bs-body-color: #2e2e2e;
+    /* Dark slate */
+    --bs-primary: #20c997;
+    /* Teal (humidity) */
+    --bs-warning: #ff6b6b;
+    /* Coral (temperature) */
+    --bs-secondary: #e0e0e0;
+    /* Light gray borders */
 }
 
 html {
