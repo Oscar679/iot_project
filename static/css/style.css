@@ -110,6 +110,12 @@ body {
 
     .row1>div,
     .row2>div {
-        width: fit-content;
+        width: 100%;
+    }
+
+    #tempChart,
+    #humidityChart {
+        max-width: 100%;
+        height: auto;
     }
 }
