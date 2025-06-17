@@ -4,13 +4,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const currentHumidityBox = document.getElementById("currentHumidity");
     const lastUpdated = document.querySelector(".lastUpdated");
     const temporaryTempCanvas = document.getElementById("tempChart").getContext("2d");
+    const temporaryHumidityCanvas = document.getElementById("humidityChart").getContext("2d");
 
     if (temporaryTempCanvas == null) {
+        console.error('Could not find the temperature canvas');
+        return;
+    }
+
+    if (temporaryHumidityCanvas == null) {
+        console.error('Could not find the humidity canvas');
         return;
     }
 
     const tempChart = new Chart(temporaryTempCanvas, {
-        type: 'line',
+        type: 'bar',
         data: {
             labels: [],
             // labels: data.map(row => row.data.timestamp.toLocaleTimeString()),
@@ -18,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     label: 'Temperature (°C)',
                     data: [],
-                    borderColor: '#ff6b6b',
                     backgroundColor: '#ff6b6b',
                     //data: data.map(row => row.temperature)
                 }
@@ -28,6 +34,34 @@ document.addEventListener("DOMContentLoaded", () => {
             scales: {
                 x: { title: { display: true, text: 'Time' } },
                 y: { beginAtZero: true, title: { display: true, text: '°C' } }
+            },
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    enabled: false
+                }
+            }
+        }
+    });
+
+    const humidityChart = new Chart(temporaryHumidityCanvas, {
+        type: 'bar',
+        data: {
+            labels: [],
+            datasets: [
+                {
+                    label: 'Percentage (%)',
+                    data: [],
+                    backgroundColor: '#20c997',
+                }
+            ]
+        }, options: {
+            animation: false,
+            scales: {
+                x: { title: { display: true, text: 'Time' } },
+                y: { beginAtZero: true, title: { display: true, text: '%' } }
             },
             plugins: {
                 legend: {
@@ -63,7 +97,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 tempChart.data.datasets[0].data.shift();
             }
 
+            humidityChart.data.labels.push(time);
+            humidityChart.data.datasets[0].data.push(data.humidity);
+
+            if (humidityChart.data.labels.length > 3) {
+                humidityChart.data.labels.shify();
+                humidity.data.datasets[0].data.shift();
+            }
+
             tempChart.update();
+            humidityChart.update();
+
         } catch (error) {
             console.error(error.message);
         }
