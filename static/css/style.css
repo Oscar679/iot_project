@@ -83,3 +83,12 @@ body {
 .row2>div {
     margin: 4%;
 }
+
+@media screen and (max-width: 1100px) {
+
+    .row1,
+    .row2 {
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+}
