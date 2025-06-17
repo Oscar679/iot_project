@@ -2,6 +2,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementsByClassName("row");
     currentTempBox = document.getElementById("currentTemp");
+    currentHumidityBox = document.getElementById("currentHumidity");
+    lastUpdated = document.getElementsByClassName("lastUpdated");
 
     async function fetchData() {
         const url = "/api/current";
@@ -16,6 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log(data);
             currentTempBox.innerHTML = "";
             currentTempBox.innerHTML = data.temperature;
+
+            currentHumidityBox.innerHTML = "";
+            currentHumidityBox.innerHTML = data.humidity;
+
+            lastUpdated.innerHTML = "";
+            lastUpdated.innerHTML = data.timestamp;
         } catch (error) {
             console.error(error.message);
         }
