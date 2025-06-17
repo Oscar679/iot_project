@@ -84,7 +84,11 @@ body {
     margin: 4%;
 }
 
-#tempChartInfo,
+#tempChartInfo {
+    margin: auto;
+    margin-right: 10%;
+}
+
 #humidityChartInfo {
     margin: auto;
     margin-right: 10%;
