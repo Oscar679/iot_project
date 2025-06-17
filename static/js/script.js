@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
         type: 'line',
         data: {
             labels: [],
-            // labels: data.map(row => row.data.timestamp.toLocaleTimeString()),
             datasets: [
                 {
                     label: 'Temperature (°C)',
@@ -38,10 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     backgroundColor: '#ff6b6b',
                     borderColor: '#20c997',
                     borderWidth: 4,
-                    pointBackgroundColor: '#20c997',
-                    pointBorderColor: '#20c997',
                     pointRadius: 0,
-                    //data: data.map(row => row.temperature)
                 }
             ]
         }, options: {
