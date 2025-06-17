@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <div class="sticky-top">
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item">
@@ -57,12 +57,12 @@
         </div>
     </div>
 
-
-    <footer class="bg-light text-center text-muted py-3">
+    <footer class="bg-light text-center text-muted py-3 mt-auto">
         <div class="container">
             &copy; 2025 Oscar Ekberg. All rights reserved.
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js" integrity="sha384-2P+Kfs3MdnSHaD6HzfLu1ySzJAAEZU6QukzniuB9YZzc1md4T0+FK3ptuBXr8D+D" crossorigin="anonymous"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
