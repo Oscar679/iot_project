@@ -65,7 +65,7 @@ def get_current_data():
             database=DB_NAME
         )
         cursor = conn.cursor(dictionary=True)
-        cursor.execute("SELECT temperature, humidity, timestamp FROM sensor_data ORDER BY timestamp DESC LIMIT 1")
+        cursor.execute("SELECT temperature, humidity, timestamp FROM sensor_data ORDER BY timestamp DESC LIMIT 20")
         row = cursor.fetchone()
         cursor.close()
         conn.close()
