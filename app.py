@@ -76,6 +76,7 @@ def get_current_data():
     except mysql.connector.Error as err:
         return jsonify({"error": str(err)}), 500
 
+# Endpoint for fetching the 5 most recent measures
 @app.route("/api/history", methods=["GET"])
 def fetch_history():
     try:
@@ -97,7 +98,7 @@ def fetch_history():
     except mysql.connector.Error as err:
         return jsonify({"error": str(err)}), 500
     
-    
+# Endpoint for fetching all data from sensor_data table
 @app.route("/api/allData", methods=["GET"])
 def fetch_all_data():
     try:
@@ -119,6 +120,6 @@ def fetch_all_data():
     except mysql.connector.Error as err:
         return jsonify({"error": str(err)}), 500
 
-    # Start server
+# Start server
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)

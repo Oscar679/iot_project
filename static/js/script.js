@@ -1,14 +1,8 @@
 /* For reference: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch */
 document.addEventListener("DOMContentLoaded", () => {
-    const currentTempBox = document.getElementById("currentTemp");
-    const currentHumidityBox = document.getElementById("currentHumidity");
-    const lastUpdated = document.querySelector(".lastUpdated");
     const temporaryTempCanvas = document.getElementById("tempChart").getContext("2d");
     const temporaryHumidityCanvas = document.getElementById("humidityChart").getContext("2d");
     const temporaryAllDataCanvas = document.getElementById("allDataChart").getContext("2d");
-    // const avgHumiditySelector = document.getElementById("avgHumidity");
-
-    //let avgHumidity = 0;
 
     if (temporaryTempCanvas == null) {
         console.error('Could not find the temperature canvas');
@@ -74,7 +68,6 @@ document.addEventListener("DOMContentLoaded", () => {
         type: 'line',
         data: {
             labels: [],
-            // labels: data.map(row => row.data.timestamp.toLocaleTimeString()),
             datasets: [
                 {
                     label: 'Temperature (°C)',
@@ -83,7 +76,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     borderColor: '#ff6b6b',
                     borderWidth: 4,
                     pointRadius: 4,
-                    //data: data.map(row => row.temperature)
                 }
             ]
         }, options: {
@@ -152,8 +144,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             const dataRows = await response.json();
-            console.log(dataRows);
-
 
             dataRows.reverse().forEach(row => {
                 const time = new Date(row.timestamp).toLocaleTimeString();
@@ -184,9 +174,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             const data = await response.json();
-            console.log(data);
-
-            console.log(data.timestamp);
 
             const time = new Date(data.timestamp).toLocaleTimeString();
             tempChart.data.labels.push(time);
@@ -226,7 +213,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             const dataRows = await response.json();
-            console.log(dataRows);
             dataRows.forEach(row => {
                 const time = new Date(row.timestamp).toLocaleDateString();
                 allDataChart.data.labels.push(time);

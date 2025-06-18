@@ -1,14 +1,9 @@
 :root {
     --bs-body-bg: #fcfcfc;
-    /* Off-white */
     --bs-body-color: #2e2e2e;
-    /* Dark slate */
     --bs-primary: #20c997;
-    /* Teal (humidity) */
     --bs-warning: #ff6b6b;
-    /* Coral (temperature) */
     --bs-secondary: #e0e0e0;
-    /* Light gray borders */
 }
 
 html {
