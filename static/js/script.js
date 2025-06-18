@@ -235,17 +235,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const dataRows = await response.json();
             console.log(dataRows);
-
-            // const firstTimeStamp = new Date(dataRows[0].timestamp).toLocaleDateString;
-            // allDataChart.data.labels[0].push(firstTimeStamp);
-
             dataRows.forEach(row => {
                 const time = new Date(row.timestamp).toLocaleDateString();
                 allDataChart.data.labels.push(time);
                 allDataChart.data.datasets[0].data.push(row.temperature)
 
-                // humidityChart.data.labels.push(time);
-                allDataChart.data.datasets[0].data.push(row.humidity);
+                allDataChart.data.datasets[1].data.push(row.humidity);
             });
 
             allDataChart.update();
