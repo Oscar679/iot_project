@@ -25,9 +25,9 @@ def home_page():
 def about_page():
     return render_template("aboutMe.html")
 
-@app.route("/contact")
-def contact_page():
-    return render_template("contact.html")
+@app.route("/hardware")
+def hardware_page():
+    return render_template("hardware.html")
 
 # Endpoint to insert sensor data
 @app.route("/api/data", methods=["POST"])
