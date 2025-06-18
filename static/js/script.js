@@ -66,14 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     title: { display: true, text: '°C' },
                     max: 100,
                 }
-            },
-            plugins: {
-                legend: {
-                    display: false
-                },
-                tooltip: {
-                    enabled: false
-                }
             }
         }
     });
