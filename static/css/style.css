@@ -101,12 +101,12 @@ body {
 }
 
 .card .btn-link {
-    color: var(--bs-primary);
+    color: black;
 }
 
 .card .btn-link:hover,
 .card .btn-link:focus {
-    color: var(--bs-warning);
+    color: var(--bs-primary);
 }
 
 @media screen and (max-width: 1100px) {
