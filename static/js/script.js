@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // const avgHumiditySelector = document.getElementById("avgHumidity");
 
     //let avgHumidity = 0;
-
+    $('.collapse').collapse();
 
     if (temporaryTempCanvas == null) {
         console.error('Could not find the temperature canvas');
