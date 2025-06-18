@@ -96,10 +96,6 @@ body {
     margin-left: 10%;
 }
 
-#projectsTitle {
-    margin: 2%;
-}
-
 @media screen and (max-width: 1100px) {
 
     .row1,
