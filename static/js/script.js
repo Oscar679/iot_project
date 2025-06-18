@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 y: {
                     beginAtZero: true,
                     title: { display: true, text: '°C' },
-                    max: 100,
+                    max: 50,
                 }
             },
             plugins: {
