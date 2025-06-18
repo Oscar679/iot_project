@@ -100,12 +100,12 @@ body {
     margin-left: 1%;
 }
 
-.card>.btn-link {
+.card .btn-link {
     color: var(--bs-primary);
 }
 
-.card>.btn-link:hover,
-.card>.btn-link:focus {
+.card .btn-link:hover,
+.card .btn-link:focus {
     color: var(--bs-warning);
 }
 
