@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     label: 'Temperature (°C)',
                     data: [],
                     backgroundColor: '#ff6b6b',
-                    borderColor: '#20c997',
+                    borderColor: '#ff6b6b',
                     borderWidth: 4,
                     pointRadius: 0,
                     order: 1,
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     backgroundColor: '#20c997',
                     borderColor: '#20c997',
                     borderWidth: 4,
-                    pointRadius: 4,
+                    pointRadius: 0,
                     order: 2,
                 }
 
