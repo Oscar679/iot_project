@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     data: [],
                     backgroundColor: '#ff6b6b',
                     borderColor: '#ff6b6b',
-                    borderWidth: 4,
+                    borderWidth: 2,
                     pointRadius: 0,
                     order: 1,
                 },
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     data: [],
                     backgroundColor: '#20c997',
                     borderColor: '#20c997',
-                    borderWidth: 4,
+                    borderWidth: 2,
                     pointRadius: 0,
                     order: 2,
                 }
