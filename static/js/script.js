@@ -61,7 +61,11 @@ document.addEventListener("DOMContentLoaded", () => {
                         maxTicksLimit: 1
                     }
                 },
-                y: { beginAtZero: true, title: { display: true, text: '°C' } }
+                y: {
+                    beginAtZero: true,
+                    title: { display: true, text: '°C' },
+                    max: 100,
+                }
             },
             plugins: {
                 legend: {
