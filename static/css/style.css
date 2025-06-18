@@ -100,13 +100,13 @@ body {
     margin-left: 1%;
 }
 
-.card>.btn {
-    color: --bs-primary;
+.card>.btn-link {
+    color: var(--bs-primary);
 }
 
-.card>.btn:hover,
-.card>.btn:focus {
-    color: --bs-warning;
+.card>.btn-link:hover,
+.card>.btn-link:focus {
+    color: var(--bs-warning);
 }
 
 @media screen and (max-width: 1100px) {
