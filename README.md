@@ -25,7 +25,7 @@
 
 #### Material
   | Component                                | Purpose  | Link           | Price (SEK) |
-  |------------------------------------------|----------------|-------------|
+  |------------------------------------------|--------- |----------------|-------------|
   | Raspberry Pi Pico WH 2022                | Microcontroller for running Python code  | [electro:kit](https://www.electrokit.com/raspberry-pi-pico-wh) | 99 SEK |
   | DHT11                                    | Sensor for measuring temperature and humidity | [electro:kit](https://www.electrokit.com/digital-temperatur-och-fuktsensor-dht11) | 49 SEK |
   | Cables (included with LNU-starter kit)   | Used to connect the sensor to the breadboard & microcontroller| [electro:kit - LNU-starter kit](https://www.electrokit.com/lnu-starter) | ~29 SEK |
