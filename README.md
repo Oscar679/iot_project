@@ -1,4 +1,4 @@
-# iot_project
+![image](https://github.com/user-attachments/assets/f3053f9d-3680-4748-b739-62976872ec2d)# iot_project
 
 ## Tutorial on how to build a temperature and humidity sensor
 
@@ -28,7 +28,26 @@
   |------------------------------------------|--------- |----------------|-------------|
   | Raspberry Pi Pico WH 2022                | Microcontroller for running Python code  | [electro:kit](https://www.electrokit.com/raspberry-pi-pico-wh) | 99 SEK |
   | DHT11                                    | Sensor for measuring temperature and humidity | [electro:kit](https://www.electrokit.com/digital-temperatur-och-fuktsensor-dht11) | 49 SEK |
-  | Cables (included with LNU-starter kit)   | Used to connect the sensor to the breadboard & microcontroller| [electro:kit - LNU-starter kit](https://www.electrokit.com/lnu-starter) | ~29 SEK |
+  | Cables | Used to connect the sensor to the breadboard & microcontroller| [electro:kit](https://www.electrokit.com/labbsladd-40-pin-30cm-hane/hane) | 55 SEK |
 
-  
+
+**Raspberry Pi Pico WH 2022**
+The raspberry Pi Pico WH is a tiny development board based on the RP2040 chip suitable for programming in MicroPython.
 ![image](https://github.com/user-attachments/assets/1f13ef3f-9136-4f1c-b95f-9390d989b496)
+
+**DHT11**
+The DHT11 is a digital temperature- and humidity-sensor transmitting a stream of data in to the microcontroller.
+![image](https://github.com/user-attachments/assets/7b23b91b-d10d-4950-b6c1-3c3777bdb47e)
+
+**Cables**
+40-pin flat cable with dupont connectors in different colors for divisibility. Suitable for use with connector decks and sensors.
+![image](https://github.com/user-attachments/assets/781946aa-01ae-4589-b0be-b00c1c7d1817)
+
+**Computer setup**
+Chosen Integrated Development Environment (IDE):
+    - Visual Studio Code (VSC)
+    - Thonny
+  Visual Studio Code has been my editor of choice since i began coding. VSC is where i feel comfortable coding and managing my projects.
+  Thonny was presented as an IDE for this course through a recorded lecture. Hence I chose to explore Thonny as an IDE. The microcontroller is fully managed through   Thonny and all of the belonging code is written and tested in Thonny IDE.
+
+  I would recommend this setup for anyone who is comfortable and used to an IDE prior to taking this course. However I would strongly recommend to use Thonny when     connecting to the microcontroller and managing its files. Thonny is extremely simple to use and offers an environment suitable for coding in MicroPython, not only   because of its shell offering an excellent debug-environment, but in addition there is basically no special installments needed for getting started.
