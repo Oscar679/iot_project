@@ -49,8 +49,8 @@ The DHT11 is a digital temperature- and humidity-sensor transmitting a stream of
 **Computer setup**
 
 **Chosen Integrated Development Environment (IDE):**
-    - Visual Studio Code (VSC)
-    - Thonny
+- Visual Studio Code (VSC)
+- Thonny
       
   Visual Studio Code has been my editor of choice since i began coding. VSC is where i feel comfortable coding and managing my projects.
   Thonny was presented as an IDE for this course through a recorded lecture. Hence I chose to explore Thonny as an IDE. The microcontroller is fully managed through   Thonny and all of the belonging code is          written and tested in Thonny IDE.
