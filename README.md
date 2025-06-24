@@ -31,3 +31,4 @@
   | Cables (included with LNU-starter kit)   | Used to connect the sensor to the breadboard & microcontroller| [electro:kit - LNU-starter kit](https://www.electrokit.com/lnu-starter) | ~29 SEK |
 
   
+![image](https://github.com/user-attachments/assets/1f13ef3f-9136-4f1c-b95f-9390d989b496)
