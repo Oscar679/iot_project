@@ -1,21 +1,19 @@
 #!/bin/bash
 
-echo "👀 Övervakar ändringar – för att starta om app.py..."
-
 cd ~/iot_project || exit 1
 
-# Döda eventuell gammal instans
+# Shut down old instance
 pkill -f app.py
 
-# Starta appen i bakgrunden
+# Start program in the background
 python3 app.py &
 
-# Övervaka ändringar i app.py
+# Script that restarts program when changes are discovered
 inotifywait -m -e modify app.py |
 while read -r filename event; do
-    echo "♻️ Ändringar upptäckta! Startar om appen..."
+    echo "Changes discovered. Restarting program..."
     pkill -f app.py
     python3 app.py &
-    echo "✅ Appen är omstartad."
+    echo "Program restarted"
 done
 
