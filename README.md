@@ -58,4 +58,4 @@ The DHT11 is a digital temperature- and humidity-sensor transmitting a stream of
   I would recommend this setup for anyone who is comfortable and used to an IDE prior to taking this course. However I would strongly recommend to use Thonny when connecting to the microcontroller and managing its files. Thonny is extremely simple to use and offers an environment suitable for coding in MicroPython, not only because of its shell offering an excellent debug-environment, but in addition there is basically no special installments needed for getting started.
 
 **MicroPython firmware**
-  In order to access the Raspberry Pi Pico WH compatible firmware must be installed on to the device, which can be found [https://micropython.org/download/RPI_PICO_W/](here) along with detailed instructions.
+In order to access the Raspberry Pi Pico WH compatible firmware must be installed on to the device, which can be found [here]((https://micropython.org/download/RPI_PICO_W/)) along with detailed instructions.
