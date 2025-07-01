@@ -60,3 +60,9 @@ I would recommend this setup for anyone who is comfortable and used to an IDE pr
 **MicroPython firmware**
 
 In order to access the Raspberry Pi Pico WH compatible firmware must be installed on to the device, which can be found [here](https://micropython.org/download/RPI_PICO_W/) along with detailed instructions.
+MicroPython is a light version of Python made for microcontrollers.
+
+**Putting everything together**
+
+![Circuit Diagram](https://github.com/user-attachments/assets/e854fe53-56ec-40a0-b825-e4f990d1c121)
+
