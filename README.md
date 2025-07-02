@@ -103,3 +103,14 @@ import os
 from dotenv import load_dotenv
 from datetime import datetime
 
+```
+
+Imports of Python libraries.
+  - Flask - used for initializing server
+  - request - used for fetching json data
+  - jsonify - converts parameter in to json
+  - render_template - serves initial files inside "template" directory
+  - mysql.connector - used for connecting to my server
+  - os -
+  - load_dotenv -
+  - datetime - generates the current time stamp
