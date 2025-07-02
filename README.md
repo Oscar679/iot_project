@@ -52,10 +52,10 @@ The DHT11 is a digital temperature- and humidity-sensor transmitting a stream of
 - Visual Studio Code (VSC)
 - Thonny
       
-Visual Studio Code has been my editor of choice since i began coding. VSC is where i feel comfortable coding and managing my projects.
+[Visual Studio Code](https://code.visualstudio.com/download) has been my editor of choice since i began coding. VSC is where i feel comfortable coding and managing my projects.
 Thonny was presented as an IDE for this course through a recorded lecture. Hence I chose to explore Thonny as an IDE. The microcontroller is fully managed through Thonny and all of the belonging code is written and tested in Thonny IDE.
     
-I would recommend this setup for anyone who is comfortable and used to an IDE prior to taking this course. However I would strongly recommend to use Thonny when connecting to the microcontroller and managing its files. Thonny is extremely simple to use and offers an environment suitable for coding in MicroPython, not only because of its shell offering an excellent debug-environment, but in addition there is basically no special installments needed for getting started.
+I would recommend this setup for anyone who is comfortable and used to an IDE prior to taking this course. However I would strongly recommend to use [Thonny](https://thonny.org/) when connecting to the microcontroller and managing its files. Thonny is extremely simple to use and offers an environment suitable for coding in MicroPython, not only because of its shell offering an excellent debug-environment, but in addition there is basically no special installments needed for getting started.
 
 **MicroPython firmware**
 
@@ -64,5 +64,5 @@ MicroPython is a light version of Python made for microcontrollers.
 
 **Putting everything together**
 
-![Circuit Diagram](https://github.com/user-attachments/assets/e854fe53-56ec-40a0-b825-e4f990d1c121)
+[Circuit Diagram](https://github.com/user-attachments/assets/e854fe53-56ec-40a0-b825-e4f990d1c121)
 
