@@ -92,4 +92,6 @@ My initial idea was to implement a deep learning model that would predict a comf
 Cloud computing is suitable for when large amounts of data are being stored and/or processed and is mainly why I chose to go with the cloud. Unfortunately I had initially overlooked the fact that AWS charges the user upon used bandwidth. Implementing such a model would rapidly increase the monthly cost, which is why this function was disregarded.
 
 _[Introduction to AWS](https://aws.amazon.com/getting-started/)_
-_[Introduction to Nginx](https://nginx.org/en/docs/beginners_guide.html)_
+
+_[Introduction to Nginx](https://nginx.org/en/docs/)_
+
