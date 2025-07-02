@@ -64,5 +64,13 @@ MicroPython is a light version of Python made for microcontrollers.
 
 **Putting everything together**
 
-[Circuit Diagram](https://github.com/user-attachments/assets/e854fe53-56ec-40a0-b825-e4f990d1c121)
+![Circuit Diagram](https://github.com/user-attachments/assets/e854fe53-56ec-40a0-b825-e4f990d1c121)
 
+The DHT11 is connected in the following manner:
+  - GND (pin 38) is connected to the GND (ground) pin of the sensor, which connects the sensor to the ground of the circuit.
+  - GP14 is connected to the data pin, which outputs temperature and humidity to the microcontroller.
+  - 3V3(OUT) (pin 36) is connected to the VCC pin, which is the power supply.
+
+![image](https://github.com/user-attachments/assets/101cf131-c818-48eb-a603-93af967c1db6)
+  - This picture illustrates the function of each pin for the DHT11.
+  - However, DHT11s with fours pins are common as well, hence the picture illustrating both versions in case of confusion.
