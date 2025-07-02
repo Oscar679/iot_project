@@ -64,15 +64,25 @@ MicroPython is a light version of Python made for microcontrollers.
 
 **Putting everything together**
 
-![Circuit Diagram](https://github.com/user-attachments/assets/e854fe53-56ec-40a0-b825-e4f990d1c121)
+![Circuit diagram](https://github.com/user-attachments/assets/4cadcf4d-646f-4b10-b308-c27b26c14f73)
+
 
 The DHT11 is connected in the following manner:
   - GND (pin 38) is connected to the GND (ground) pin of the sensor, which connects the sensor to the ground of the circuit.
   - GP14 is connected to the data pin, which outputs temperature and humidity to the microcontroller.
   - 3V3(OUT) (pin 36) is connected to the VCC pin, which is the power supply.
 
+Furthermore I have connected a red lamp (GP0) along with a resistor for debugging and testing.
+
 ![image](https://github.com/user-attachments/assets/101cf131-c818-48eb-a603-93af967c1db6)
 
 _[Credit](https://www.researchgate.net/figure/The-pin-diagram-of-DHT11-temperature-sensors_fig2_359068957)_
   - This picture illustrates the function of each pin for the DHT11.
   - However, DHT11s with fours pins are common as well, hence the picture illustrating both versions in case of confusion.
+
+**Platform**
+
+This project is running on a cloud server (EC2) provided by Amazon Web Services (AWS). The EC2 instance is connected to an AWS Relational Database (RDS) where the data is stored and retrieved from.
+Furthermore Nginx is installed on to the EC2 instance, which is a software that is known for its reliability, scalability and speed when it comes to serving content through the Hyper Text Transfer Protocol (HTTP).
+
+I chose to go with Amazon Web Services as a cloud service provider (CSP) because I personally wanted to strengthen my knowledge for this particular CSP.
