@@ -73,6 +73,6 @@ The DHT11 is connected in the following manner:
 
 ![image](https://github.com/user-attachments/assets/101cf131-c818-48eb-a603-93af967c1db6)
 
-[Credit](https://www.researchgate.net/figure/The-pin-diagram-of-DHT11-temperature-sensors_fig2_359068957)
+_[Credit](https://www.researchgate.net/figure/The-pin-diagram-of-DHT11-temperature-sensors_fig2_359068957)_
   - This picture illustrates the function of each pin for the DHT11.
   - However, DHT11s with fours pins are common as well, hence the picture illustrating both versions in case of confusion.
