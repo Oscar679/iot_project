@@ -96,10 +96,10 @@ _[Introduction to AWS](https://aws.amazon.com/getting-started/)_
 _[Introduction to Nginx](https://nginx.org/en/docs/)_
 
 ## The code
-<pre>
+´´´python
 from flask import Flask, request, jsonify, render_template
 import mysql.connector
 import os
 from dotenv import load_dotenv
 from datetime import datetime
-</pre>
+´´´python
