@@ -64,7 +64,7 @@ MicroPython is a light version of Python made for microcontrollers.
 
 **Putting everything together**
 
-![Circuit diagram](https://github.com/user-attachments/assets/4cadcf4d-646f-4b10-b308-c27b26c14f73)
+![Circuit diagram](https://github.com/user-attachments/assets/8e23de3f-3519-4df6-b8be-79e4ef620ff7)
 
 
 The DHT11 is connected in the following manner:
