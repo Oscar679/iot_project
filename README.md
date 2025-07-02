@@ -22,7 +22,7 @@
     - **Code management (Git, Bash-scripts for automation)**
     - **And of course the star of the show, building an IOT device.**
 
-#### Material
+### Material
   | Component                                | Purpose  | Link           | Price (SEK) |
   |------------------------------------------|--------- |----------------|-------------|
   | Raspberry Pi Pico WH 2022                | Microcontroller for running Python code  | [electro:kit](https://www.electrokit.com/raspberry-pi-pico-wh) | 99 SEK |
@@ -45,8 +45,7 @@ The DHT11 is a digital temperature- and humidity-sensor transmitting a stream of
 
 ![image](https://github.com/user-attachments/assets/781946aa-01ae-4589-b0be-b00c1c7d1817)
 
-
-**Computer setup**
+## Computer setup
 
 **Chosen Integrated Development Environment (IDE):**
 - Visual Studio Code (VSC)
@@ -62,7 +61,7 @@ I would recommend this setup for anyone who is comfortable and used to an IDE pr
 In order to access the Raspberry Pi Pico WH compatible firmware must be installed on to the device, which can be found [here](https://micropython.org/download/RPI_PICO_W/) along with detailed instructions.
 MicroPython is a light version of Python made for microcontrollers.
 
-**Putting everything together**
+## Putting everything together
 
 ![Circuit diagram](https://github.com/user-attachments/assets/8e23de3f-3519-4df6-b8be-79e4ef620ff7)
 
@@ -80,7 +79,7 @@ _[Credit](https://www.researchgate.net/figure/The-pin-diagram-of-DHT11-temperatu
   - This picture illustrates the function of each pin for the DHT11.
   - However, DHT11s with fours pins are common as well, hence the picture illustrating both versions in case of confusion.
 
-**Platform**
+## Platform
 
 This project is running on a cloud server (EC2) provided by Amazon Web Services (AWS). The EC2 instance is connected to an AWS Relational Database (RDS) where the data is stored and retrieved from.
 Furthermore Nginx is installed on to the EC2 instance, which is a software that is known for its reliability, scalability and speed when it comes to serving content through the Hyper Text Transfer Protocol (HTTP). Which was ideal for this particular project since data will be transferred through the HTTP every five seconds in order to update each chart.
@@ -103,3 +102,4 @@ import mysql.connector
 import os
 from dotenv import load_dotenv
 from datetime import datetime
+
