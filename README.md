@@ -69,7 +69,7 @@ MicroPython is a light version of Python made for microcontrollers.
 
 The DHT11 is connected in the following manner:
   - GND (pin 38) is connected to the GND (ground) pin of the sensor, which connects the sensor to the ground of the circuit.
-  - GP14 is connected to the data pin, which outputs temperature and humidity to the microcontroller.
+  - GP14 is connected to the DATA pin, which sends temperature and humidity data to the microcontroller.
   - 3V3(OUT) (pin 36) is connected to the VCC pin, which is the power supply.
 
 Furthermore I have connected a red lamp (GP0) along with a resistor for debugging and testing.
@@ -83,6 +83,13 @@ _[Credit](https://www.researchgate.net/figure/The-pin-diagram-of-DHT11-temperatu
 **Platform**
 
 This project is running on a cloud server (EC2) provided by Amazon Web Services (AWS). The EC2 instance is connected to an AWS Relational Database (RDS) where the data is stored and retrieved from.
-Furthermore Nginx is installed on to the EC2 instance, which is a software that is known for its reliability, scalability and speed when it comes to serving content through the Hyper Text Transfer Protocol (HTTP).
+Furthermore Nginx is installed on to the EC2 instance, which is a software that is known for its reliability, scalability and speed when it comes to serving content through the Hyper Text Transfer Protocol (HTTP). Which was ideal for this particular project since data will be transferred through the HTTP every five seconds in order to update each chart.
 
-I chose to go with Amazon Web Services as a cloud service provider (CSP) because I personally wanted to strengthen my knowledge for this particular CSP.
+I chose to go with Amazon Web Services as a cloud service provider (CSP) because I personally wanted to strengthen my knowledge for this particular platform. Furthermore I consider having knowledge about AWS increases my value for future potential employers.
+
+My initial idea was to implement a deep learning model that would predict a comfort level according to the current temperature and humidity. The deep learning model would be initialized with a set of manually inserted comfort levels according to temperature and humidity in order to make assumptions.
+
+Cloud computing is suitable for when large amounts of data are being stored and/or processed and is mainly why I chose to go with the cloud. Unfortunately I had initially overlooked the fact that AWS charges the user upon used bandwidth. Implementing such a model would rapidly increase the monthly cost, which is why this function was disregarded.
+
+_[Introduction to AWS](https://aws.amazon.com/getting-started/)_
+_[Introduction to Nginx](https://nginx.org/en/docs/beginners_guide.html)_
