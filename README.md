@@ -36,7 +36,7 @@ The raspberry Pi Pico WH is a tiny development board based on the RP2040 chip su
 ![image](https://github.com/user-attachments/assets/1f13ef3f-9136-4f1c-b95f-9390d989b496)
 
 **DHT11**
-The DHT11 is a digital temperature- and humidity-sensor transmitting a stream of data in to the microcontroller.
+The DHT11 is a digital temperature- and humidity-sensor transmitting a stream of data into the microcontroller.
 
 ![image](https://github.com/user-attachments/assets/7b23b91b-d10d-4950-b6c1-3c3777bdb47e)
 
@@ -51,7 +51,7 @@ The DHT11 is a digital temperature- and humidity-sensor transmitting a stream of
 - Visual Studio Code (VSC)
 - Thonny
       
-[Visual Studio Code](https://code.visualstudio.com/download) has been my editor of choice since i began coding. VSC is where i feel comfortable coding and managing my projects.
+[Visual Studio Code](https://code.visualstudio.com/download) has been my editor of choice since I began coding. VSC is where i feel comfortable coding and managing my projects.
 Thonny was presented as an IDE for this course through a recorded lecture. Hence I chose to explore Thonny as an IDE. The microcontroller is fully managed through Thonny and all of the belonging code is written and tested in Thonny IDE.
     
 I would recommend this setup for anyone who is comfortable and used to an IDE prior to taking this course. However I would strongly recommend to use [Thonny](https://thonny.org/) when connecting to the microcontroller and managing its files. Thonny is extremely simple to use and offers an environment suitable for coding in MicroPython, not only because of its shell offering an excellent debug-environment, but in addition there is basically no special installments needed for getting started.
@@ -109,7 +109,7 @@ from datetime import datetime
 **Imports of Python libraries**
   - Flask - used for initializing server
   - request - used for fetching json data
-  - jsonify - converts parameter in to json
+  - jsonify - converts parameter into json
   - render_template - serves files inside "template" directory
   - mysql.connector - used for connecting to server
   - os - for environment variables and file paths
@@ -133,7 +133,7 @@ app = Flask(__name__)
 
 **Environment variables and Flask setup**
   - load.dotenv() - loads environment variables (hostname, username, password and name for database) in a way that keeps them secret for anyone viewing the code
-  - os.getenv() retrieves the specified environment variable from the systems .env file
+  - os.getenv() retrieves the specified environment variable from the system's .env file
   - Flask(_name_) - instantiates an object of the Flask class.
 
 ```python
@@ -221,7 +221,7 @@ import gc
 
 **Imports of Python libraries**
   - urequests - Enables HTTP requests to send retrieved data from the microcontroller to the server
-  - Pin - Used to connect/control GPIO pins on the microcontroller
+  - Pin - Used to control GPIO pins on the microcontroller
   - sleep - Function used to implement delays after readings
   - DHT11 - Drivers for the DHT11 sensor
   - os - Used for interacting with the filesystem
@@ -251,7 +251,7 @@ led.value(0)
 
 **Establishing variables for the sensor and led**
   - DHT11(Pin(14)) - The DHT11 transmits its data to GPIO14
-  - Pin(0, Pin.OUT) - Recognizes the GPIO0 as a LED
+  - Pin(0, Pin.OUT) - Recognizes the GPIO0 as an LED
   - led.value(0) - Sets its initial value to 0, off
 
 ```python
@@ -298,7 +298,7 @@ The Hypertext Transfer Protocol (HTTP) is used in order to send data.
 ## Presenting the data
 
 Data is saved on to the database every five seconds, when measures are made.
-I chose to go with AWS RDS MySQL because the data that is measured fits well in to a tabular structure. Each tuple consists of a timestamp, temperature and humidity value. Furthermore a relational database provides effective and simple querying, which is suitable for this project because the web application is querying the database twice every 5 seconds. Additionally a relational database provides scalability which opens up for adding additional dashboards and storing large amounts of data.
+I chose to go with AWS RDS MySQL because the data that is measured fits well into a tabular structure. Each tuple consists of a timestamp, temperature and humidity value. Furthermore a relational database provides effective and simple querying, which is suitable for this project because the web application is querying the database twice every 5 seconds. Additionally a relational database provides scalability which opens up for adding additional dashboards and storing large amounts of data.
 
 There are no types of triggers or advanced SQL functions responding to certain data. In retrospect I would consider adding a trigger for when temperature levels exceed for example 30 degrees celsius which would notify me through e-mail.
 
