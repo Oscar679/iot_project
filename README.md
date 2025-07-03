@@ -65,10 +65,7 @@ MicroPython is a light version of Python made for microcontrollers.
 
 ![Circuit diagram](https://github.com/user-attachments/assets/5dbd6287-5aa1-4cbe-8ea4-98ae0b0b1737)
 
-The DHT11 is connected in the following manner:
-  - GND (pin 38) is connected to the GND (ground) pin of the sensor, which connects the sensor to the ground of the circuit.
-  - GP14 is connected to the DATA pin, which sends temperature and humidity data to the microcontroller.
-  - 3V3(OUT) (pin 36) is connected to the VCC pin, which is the power supply.
+Above is a circuit diagram explaining wiring of the device.
 
 Furthermore I have connected a red lamp (GP0) along with a resistor for debugging and testing.
 
