@@ -250,4 +250,41 @@ led.value(0)
 ```
 
 **Establishing variables for the sensor and led**
-  - 
+  - DHT11(Pin(14)) - The DHT11 transmits its data to GPIO14
+  - Pin(0, Pin.OUT) - Recognizes the GPIO0 as a LED
+  - led.value(0) - Sets its initial value to 0, off
+
+```python
+while True:
+    sensor.measure()
+    
+    temperature = sensor.temperature()
+    humidity = sensor.humidity()
+
+```
+
+**Measuring the temperature and humidity every five seconds**
+  - sensor.measure() - Measuring initiates
+  - sensor.temperature() - Used to store the measured temperature
+  - sensor.humidity() - Used to store the measured humidity
+
+```python
+    url = "http://climatebot.net:5000/api/data"
+    
+    data = {"temperature": temperature, "humidity": humidity}
+    
+    response = urequests.post(url, json=data)
+    
+    response.close()
+    gc.collect
+
+    sleep(5)
+
+```
+
+**Sending measured data to Flask API**
+  - url = "http://climatebot.net:5000/api/data" - My website URL where the data is sent
+  - data = {"temperature": temperature, "humidity": humidity} - Creates an object that stores temperature and humidity
+  - response = urequests.post(url, json=data) - Performing the send
+  - response.close(), gc.collect - Garbage collection, freeing allocated memory
+  - sleep(5) - Delays execution for a given number of seconds
