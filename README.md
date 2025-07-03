@@ -63,8 +63,7 @@ MicroPython is a light version of Python made for microcontrollers.
 
 ## Putting everything together
 
-![Circuit diagram](https://github.com/user-attachments/assets/8e23de3f-3519-4df6-b8be-79e4ef620ff7)
-
+![Circuit diagram](https://github.com/user-attachments/assets/5dbd6287-5aa1-4cbe-8ea4-98ae0b0b1737)
 
 The DHT11 is connected in the following manner:
   - GND (pin 38) is connected to the GND (ground) pin of the sensor, which connects the sensor to the ground of the circuit.
