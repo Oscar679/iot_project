@@ -319,6 +319,7 @@ Humidity dashboard
 All time historical dashboard
 
 I even added some other pages.
+
 ![image](https://github.com/user-attachments/assets/a6b3451c-ce73-4827-ab35-635a7e408c8c)
 
 ![image](https://github.com/user-attachments/assets/611d24c3-0372-4de0-bee7-088aaf91a48a)
