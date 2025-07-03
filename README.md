@@ -318,7 +318,9 @@ Humidity dashboard
 
 All time historical dashboard
 
-I even added some other pages
+Overall, I am satisfied with how the project turned out. The dashboards update in real time and the backend works seamlessly through AWS. In retrospect, I would improve the design, add more advanced alerts, and optimize data storage costs.
+
+I even added some other pages.
 
 ![image](https://github.com/user-attachments/assets/a6b3451c-ce73-4827-ab35-635a7e408c8c)
 
