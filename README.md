@@ -83,7 +83,7 @@ _[Credit](https://www.electronicwings.com/esp32/dht11-sensor-interfacing-with-es
 ## Platform
 
 This project is running on a cloud server (EC2) provided by Amazon Web Services (AWS). The EC2 instance is connected to an AWS Relational Database (RDS) where the data is stored and retrieved from.
-Furthermore Nginx is installed on to the EC2 instance, which is a software that is known for its reliability, scalability and speed when it comes to serving content through the Hyper Text Transfer Protocol (HTTP). Which was ideal for this particular project since data will be transferred through the HTTP every five seconds in order to update each chart.
+Furthermore Nginx is installed on to the EC2 instance, which is a software that is known for its reliability, scalability and speed when it comes to serving content through the Hypertext Transfer Protocol (HTTP). Which was ideal for this particular project since data will be transferred through the HTTP every five seconds in order to update each chart.
 
 I chose to go with Amazon Web Services as a cloud service provider (CSP) because I personally wanted to strengthen my knowledge for this particular platform. Furthermore I consider having knowledge about AWS increases my value for future potential employers.
 
@@ -288,3 +288,39 @@ while True:
   - response = urequests.post(url, json=data) - Performing the send
   - response.close(), gc.collect - Garbage collection, freeing allocated memory
   - sleep(5) - Delays execution for a given number of seconds
+
+## Transmitting the data / connectivity
+
+The data is measured and sent every five seconds.
+The data is sent through my WiFi to an endpoint of my website.
+The Hypertext Transfer Protocol (HTTP) is used in order to send data.
+
+## Presenting the data
+
+Data is saved on to the database every five seconds, when measures are made.
+I chose to go with AWS RDS MySQL because the data that is measured fits well in to a tabular structure. Each tuple consists of a timestamp, temperature and humidity value. Furthermore a relational database provides effective and simple querying, which is suitable for this project because the web application is querying the database twice every 5 seconds. Additionally a relational database provides scalability which opens up for adding additional dashboards and storing large amounts of data.
+
+There are no types of triggers or advanced SQL functions responding to certain data. In retrospect I would consider adding a trigger for when temperature levels exceed for example 30 degrees celsius which would notify me through e-mail.
+
+## Finalizing the design
+
+Here are screenshots of how my website turned out.
+
+![image](https://github.com/user-attachments/assets/268a8c0e-d6a3-42e0-851b-fd951bc00506)
+
+Temperature dashboard
+
+![image](https://github.com/user-attachments/assets/d78e1175-7255-413c-9c24-55c419f1e592)
+
+Humidity dashboard
+
+![image](https://github.com/user-attachments/assets/07ea7ad9-3872-44bb-99a4-e5da974069bf)
+
+All time historical dashboard
+
+I even added some other pages.
+![image](https://github.com/user-attachments/assets/a6b3451c-ce73-4827-ab35-635a7e408c8c)
+
+![image](https://github.com/user-attachments/assets/611d24c3-0372-4de0-bee7-088aaf91a48a)
+
+![image](https://github.com/user-attachments/assets/7a656eb9-c1e3-4fcb-9d81-2f2d7662c2b7)
