@@ -11,13 +11,13 @@
 
 ### Objective
 
-  - **Why i chose to do this particular project:** While brainstorming different ideas for this project I was determined to solve an existing problem, e.g. by giving valuable insights upon an existing problem.             Recently I have been experiencing a great increase in discomfort related to indoor climate in my apartment. Hence I came up with the idea of measuring the live temperature and humidity in my home office. The         idea was to provide visualization of potential trends of the indoor climate. Furthermore the visualized data could be used to determine potential causal relationships, e.g. having the fan or PC running.
+  - **Why I chose to do this particular project:** While brainstorming different ideas for this project I was determined to solve an existing problem, e.g. by giving valuable insights upon an existing problem.             Recently I have been experiencing a great increase in discomfort related to indoor climate in my apartment. Hence I came up with the idea of measuring the live temperature and humidity in my home office. The         idea was to provide visualization of potential trends of the indoor climate. Furthermore the visualized data could be used to determine potential causal relationships, e.g. having the fan or PC running.
  
   - **What purpose does Climatebot.net serve:** The web service offers valuable data which can be analyzed and utilized in order to increase the level of comfort in my home office.
   
   - **What insights will this project give:** As discussed the web service will be utilized as a tool in order to increase the indoor level of comfort. Furthermore several personal insights will be achieved, e.g. I       will plan and build an entire web service from scratch to deployment. Hence I will be practicing and refining my fullstack development skills. This includes:
     - **Frontend (HTML, CSS, JS)**
-    - **Backend (Pyhon Flask, MySQL)**
+    - **Backend (Python Flask, MySQL)**
     - **Server configuration and management (AWS)**
     - **Code management (Git, Bash-scripts for automation)**
     - **And of course the star of the show, building an IOT device.**
@@ -78,7 +78,7 @@ _[Credit](https://www.electrothinks.com/2023/08/dht11-sensor-module.html)_
 _[Credit](https://www.electronicwings.com/esp32/dht11-sensor-interfacing-with-esp32)_
 
   - This first picture illustrates the function of each pin for the DHT11 I used.
-  - However, DHT11s with fours pins are common as well, hence the picture illustrating both versions in case of confusion.
+  - However, DHT11s with four pins are common as well, hence the picture illustrating both versions in case of confusion.
 
 ## Platform
 
@@ -153,7 +153,7 @@ def hardware_page():
 ```
 
 **Defining routes for HTML files**
-  - @app.route() - depending on what IP-adress user enters
+  - @app.route() - depending on what IP-address user enters
   - def home_page() - defines a function
   - return render_template() - returns a specified file inside the "templates" directory
 
@@ -318,7 +318,7 @@ Humidity dashboard
 
 All time historical dashboard
 
-I even added some other pages.
+I even added some other pages
 
 ![image](https://github.com/user-attachments/assets/a6b3451c-ce73-4827-ab35-635a7e408c8c)
 
