@@ -95,7 +95,7 @@ _[Introduction to AWS](https://aws.amazon.com/getting-started/)_
 
 _[Introduction to Nginx](https://nginx.org/en/docs/)_
 
-## The code
+## The Flask application code
 
 ```python
 from flask import Flask, request, jsonify, render_template
@@ -205,3 +205,49 @@ if __name__ == "__main__":
 
 **Starting the server**
   - Starts a public server accessed through port 5000
+
+## The microcontroller code
+
+```python
+import urequests
+from machine import Pin
+from time import sleep
+from dht import DHT11
+import os
+import network
+import gc
+
+```
+
+**Imports of Python libraries**
+  - urequests - Enables HTTP requests to send retrieved data from the microcontroller to the server
+  - Pin - Used to connect/control GPIO pins on the microcontroller
+  - sleep - Function used to implement delays after readings
+  - DHT11 - Drivers for the DHT11 sensor
+  - os - Used for interacting with the filesystem
+  - network - Used for connecting to the WiFi
+  - gc - Garbage collection, if no garbage collection is used, the microcontroller will crash due to its small amount of memory
+
+```python
+def connect():
+    wlan = network.WLAN(network.STA_IF)
+    wlan.active(True)
+    wlan.connect(ssid, password)
+
+```
+
+**Connecting to the WiFi**
+  - network.WLAN(network.STA_IF) - Puts the WiFi in station mode
+  - wlan.active(True) - Initializes the process of making the WiFi findable for the Pico
+  - wlan.connect(ssid, password) - Connects to the specified WiFi
+
+```python
+sensor = DHT11(Pin(14))
+
+led = Pin(0, Pin.OUT)
+led.value(0)
+
+```
+
+**Establishing variables for the sensor and led**
+  - 
