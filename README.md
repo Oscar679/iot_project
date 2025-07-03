@@ -9,7 +9,7 @@
   
   - **Estimation of time spent:** ~50 hours
 
-### Objective
+## Objective
 
   - **Why I chose to do this particular project:** While brainstorming different ideas for this project I was determined to solve an existing problem, e.g. by giving valuable insights upon an existing problem.             Recently I have been experiencing a great increase in discomfort related to indoor climate in my apartment. Hence I came up with the idea of measuring the live temperature and humidity in my home office. The         idea was to provide visualization of potential trends of the indoor climate. Furthermore the visualized data could be used to determine potential causal relationships, e.g. having the fan or PC running.
  
@@ -22,7 +22,7 @@
     - **Code management (Git, Bash-scripts for automation)**
     - **And of course the star of the show, building an IOT device.**
 
-### Material
+## Material
   | Component                                | Purpose  | Link           | Price (SEK) |
   |------------------------------------------|--------- |----------------|-------------|
   | Raspberry Pi Pico WH 2022                | Microcontroller for running Python code  | [electro:kit](https://www.electrokit.com/raspberry-pi-pico-wh) | 99 SEK |
