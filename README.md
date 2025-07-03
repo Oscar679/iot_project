@@ -69,10 +69,15 @@ Above is a circuit diagram explaining wiring of the device.
 
 Furthermore I have connected a red lamp (GP0) along with a resistor for debugging and testing.
 
-![image](https://github.com/user-attachments/assets/101cf131-c818-48eb-a603-93af967c1db6)
+![The DHT11 I used](https://github.com/user-attachments/assets/08d003fb-916e-44dd-bbed-a7e2c2303577)
 
-_[Credit](https://www.researchgate.net/figure/The-pin-diagram-of-DHT11-temperature-sensors_fig2_359068957)_
-  - This picture illustrates the function of each pin for the DHT11.
+_[Credit](https://www.electrothinks.com/2023/08/dht11-sensor-module.html)_
+
+![image](https://github.com/user-attachments/assets/6688a018-bdfa-400b-9474-27f705e5b7b5)
+
+_[Credit](https://www.electronicwings.com/esp32/dht11-sensor-interfacing-with-esp32)_
+
+  - This first picture illustrates the function of each pin for the DHT11 I used.
   - However, DHT11s with fours pins are common as well, hence the picture illustrating both versions in case of confusion.
 
 ## Platform
