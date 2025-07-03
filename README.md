@@ -115,3 +115,93 @@ from datetime import datetime
   - os - for environment variables and file paths
   - load_dotenv - loads variables from a .env file
   - datetime - generates the current timestamp
+
+```python
+# Load credentials from .env
+load_dotenv()
+
+# Environment variables
+DB_HOST = os.getenv("DB_HOSTNAME")
+DB_USER = os.getenv("DB_USER")
+DB_PASSWORD = os.getenv("DB_PASSWORD")
+DB_NAME = os.getenv("DB_NAME")
+
+# Flask app setup
+app = Flask(__name__)
+
+```
+
+**Environment variables and Flask setup**
+  - load.dotenv() - loads environment variables (hostname, username, password and name for database) in a way that keeps them secret for anyone viewing the code
+  - os.getenv() retrieves the specified environment variable from the systems .env file
+  - Flask(_name_) - instantiates an object of the Flask class.
+
+```python
+# Defining routes for html files (different pages on website)
+@app.route("/")
+def home_page():
+    return render_template("index.html")
+
+@app.route("/aboutMe")
+def about_page():
+    return render_template("aboutMe.html")
+
+@app.route("/hardware")
+def hardware_page():
+    return render_template("hardware.html")
+
+```
+
+**Defining routes for HTML files**
+  - @app.route() - depending on what IP-adress user enters
+  - def home_page() - defines a function
+  - return render_template() - returns a specified file inside the "templates" directory
+
+```python
+# Endpoint to insert sensor data
+@app.route("/api/data", methods=["POST"])
+def insert_data():
+    data = request.get_json()
+    temperature = data.get("temperature")
+    humidity = data.get("humidity")
+    
+    try:
+        conn = mysql.connector.connect(
+            host=DB_HOST,
+            user=DB_USER,
+            password=DB_PASSWORD,
+            database=DB_NAME
+        )
+        cursor = conn.cursor()
+        query = "INSERT INTO sensor_data (timestamp, temperature, humidity) VALUES (%s, %s, %s)"
+        values = (datetime.now(), temperature, humidity)
+        cursor.execute(query, values)
+        conn.commit()
+        cursor.close()
+        conn.close()
+        return jsonify({"message": "Data inserted"}), 201
+    except mysql.connector.Error as err:
+        return jsonify({"error": str(err)}), 500
+
+```
+
+**Creating an endpoint**
+  - @app.route("/api/data", methods=["POST"]) - Defines a new route that listens for HTTP requests using the POST method at specified endpoint
+  - request.get_json() - parses JSON data
+  - data.get() - fetches the specified value from the parsed JSON data
+  - mysql.connector.connect() - Establishes a connection to the MySQL database
+  - cursor.execute() - Runs the specified query along with specified values
+  - conn.commit() - Commits the changes
+  - cursor.close() - Garbage collection
+  - conn.close() - Closes database connection
+  - return jsonify() - Returns a response message and response code whether the insert was successful or not
+
+```python
+# Start server
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
+
+```
+
+**Starting the server**
+  - Starts a public server accessed through port 5000
