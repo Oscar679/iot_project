@@ -302,6 +302,8 @@ I chose to go with AWS RDS MySQL because the data that is measured fits well int
 
 There are no types of triggers or advanced SQL functions responding to certain data. In retrospect I would consider adding a trigger for when temperature levels exceed for example 30 degrees celsius which would notify me through e-mail.
 
+The data is visualized and displayed through the Chart.js library which generates basic graphs with desired data.
+
 ## Finalizing the design
 
 Here are screenshots of how my website turned out.
