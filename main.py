@@ -10,7 +10,7 @@ os.uname()
 
 # My Wi-Fi information (help from this article: https://projects.raspberrypi.org/en/projects/get-started-pico-w/2)
 ssid = 'TP-Link_Extender'
-password = 'Fridaoscar48'
+password = 'enter your WiFi password here'
 
 def connect():
     # Connecting to WLAN
